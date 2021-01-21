@@ -101,12 +101,13 @@ nav.topicstype ul.topics_list > li > a{
     min-width: 100px;
     font-weight: 600;
     letter-spacing: 1px; 
+    color: #121416;
 }
 
 
 
 nav.topicstype ul.topics_list > li > a:visited {
-    color:#282828;
+    color: #121416;
 }
 
 
