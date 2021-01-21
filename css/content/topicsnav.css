@@ -62,6 +62,7 @@ nav.topicstype ul.topics_list{
     width: 750px;
     margin: 0 auto;
     border-radius: 5px;
+    color: #121416;
 }
 
 @media screen and (max-width: 575px) {
@@ -107,7 +108,7 @@ nav.topicstype ul.topics_list > li > a{
 
 
 nav.topicstype ul.topics_list > li > a:visited {
-    color: #121416;
+    color:#282828;
 }
 
 

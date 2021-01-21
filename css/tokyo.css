@@ -27,8 +27,13 @@ div.breadcrumb{
     list-style: none;
     width: 1100px;
     padding-left: 80px;
-    
   }
+
+  @media screen and (max-width: 1200px) {
+    div.breadcrumb ol.breadcrumb_list{
+        width:100%;
+    }
+}
   div.breadcrumb ol.breadcrumb_list > li{
     display: inline-block;
     margin-right: 10px;
@@ -69,6 +74,12 @@ div.tokyobox{
     /* border: 1px solid black; */
     width:960px;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    div.tokyobox{
+        width:90%;
+    }
 }
 div.tokyobanner img{
     width:100%;
@@ -157,6 +168,12 @@ div.cafe {
 
 }
 
+@media screen and (max-width: 992px) {
+    div.cafe:nth-child(9){
+        display:none;
+    }
+}
+
 div.bookmark{
     position: absolute;
     display: inline-block;
@@ -213,6 +230,8 @@ div.user{
     text-justify:inter-ideograph;
 }
 
+
+
 .cafeinfo div.founded img,.cafeinfo div.location img{
     width: 15px;
     margin: 5px;
@@ -250,40 +269,39 @@ div.user{
 
 
 /* ----------see MORE----------------- */
-a.seemoreuser{
-    text-align: center;
+a.seemoreuser {
     appearance: none;
     background: none rgb(18, 20, 22);
     cursor: pointer;
     line-height: 1;
-    margin: 0px;
+    margin: 0px auto;
     overflow: visible;
     padding: 0px 2rem;
     text-transform: none;
     display: inline-flex;
     position: relative;
-    -webkit-box-align: center;
     align-items: center;
-    -webkit-box-pack: center;
     justify-content: center;
     height: 2.875rem;
     border: 0px none;
-    border-radius: 4rem;
-    font-family: ProximaNova-Bold, Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    will-change: background-color;
-    transition: background-color 0.2s ease 0s, color 0.2s ease 0s;
-    white-space: nowrap;
+    border-radius: 5px;
+    font-size: 18px;
     color: rgb(255, 255, 255);
-    margin: 20px;
-    margin-bottom: 40px;
+    padding: 0 80px;
     text-decoration: none;
+    text-align: center;
+    margin-bottom: 120px;
+    margin-top: 40px;
 }
 
-button.seemoreuser:visited{
+@media screen and (max-width: 767px) {
+    a.seemoreuser {
+        font-size: 16px;
+        margin-bottom: 120px;
+    }
+}
+
+button.seemoreuser:visited {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-
-
-
