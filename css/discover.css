@@ -1,0 +1,182 @@
+@import "./content/all.css";
+@import "./content/header.css";
+@import "./content/footer.css";
+@import "./content/topicsnav.css";
+
+*{ font-family: "Proxima Nova";
+}
+/* div.main{
+    background: linear-gradient(90deg, rgba(171, 194, 202, 1)0%, rgba(242, 237, 223, 0.8)60%);
+    background: -moz-linear-gradient(90deg, rgba(171, 194, 202, 1)0%, rgba(242, 237, 223, 0.8)60%);
+    background: -webkit-linear-gradient(90deg, rgba(171, 194, 202, 1)0%, rgba(242, 237, 223, 0.8)60%);
+    background: -o-linear-gradient(90deg, rgba(171, 194, 202, 1)0%, rgba(242, 237, 223, 0.8)60%);
+}  */
+div.citytopics {
+    font-size: 40px;
+    font-weight: 600;
+    display: flex;
+    padding: 40px 40px 30px 40px ;
+    text-align: left;
+    position: relative;
+    border: 8px solid #282828;
+    max-width: 1200px;
+    margin: auto;
+    flex-direction:column;
+    letter-spacing: 0.13em;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    color: #121416;
+}
+
+@media screen and (min-width:768px)  and (max-width: 1200px) {
+    div.citytopics {
+        margin: 0 30px;
+        font-size: 32px;
+    border: 6px solid #121416;
+    }
+}
+
+@media screen and (max-width: 767px){
+    div.citytopics {
+        margin: 0 30px;
+    font-size: 28px;
+    border: 6px solid#121416;
+    }
+}
+
+span.dis {
+    font-size: 16px;
+    color: #121416;
+    font-weight: 600;
+    letter-spacing:0.5px;
+    padding: 15px 0;;
+}
+
+@media screen and (max-width: 767px) {
+    span.dis {
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* -----------------------------------------user recommanded--------------------------------- */
+
+/* --------LIST------ */
+
+div.citylist{
+    margin:0 auto;
+    text-align: center;
+    /* width: 1200px; */
+    display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-content: center;
+justify-content: center;
+max-width: 1200px;
+margin-top: 80px;
+}
+
+@media screen and (max-width: 1200px) {
+    div.citylist {
+        margin-top: 30px;
+    }
+}
+
+div.city {
+	max-width: 100%;
+	margin: 10px;
+	overflow: hidden;
+    width: 200px;
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+    margin: 20px;
+    
+}
+@media screen and (max-width: 1200px) {
+    div.city {
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    div.city {
+        margin: 10px;
+    }
+}
+
+
+
+.cityphoto a img{
+    width: 100%;
+    border-radius: 5px;
+    
+}
+
+.cityphoto{
+    position: relative;
+    font-size: 0;
+    width: 200px;
+    vertical-align: top;
+}
+.city h3{
+    margin: 0px;
+}
+
+
+
+.cityname{
+	padding:15px;
+    width: 100%;
+    display: inline-block;
+    letter-spacing: 0.5px;
+}
+
+div.more{
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+
+a.seemoreuser {
+    appearance: none;
+    background: none rgb(18, 20, 22);
+    cursor: pointer;
+    line-height: 1;
+    margin: 0px auto;
+    overflow: visible;
+    padding: 0px 2rem;
+    text-transform: none;
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 2.875rem;
+    border: 0px none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    padding: 0 80px;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 120px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 767px) {
+    a.seemoreuser {
+        font-size: 16px;
+        margin-bottom: 120px;
+    }
+}
+
+button.seemoreuser:visited{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+

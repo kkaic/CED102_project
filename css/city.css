@@ -1,0 +1,142 @@
+@import "./content/all.css";
+@import "./content/header.css";
+@import "./content/footer.css";
+* {
+    font-family: "Proxima Nova";
+}
+
+/* div.main{
+    background: linear-gradient(90deg, rgba(171, 194, 202, 1)0%, rgba(242, 237, 223, 0.8)60%);
+    background: -moz-linear-gradient(90deg, rgba(171, 194, 202, 1)0%, rgba(242, 237, 223, 0.8)60%);
+    background: -webkit-linear-gradient(90deg, rgba(171, 194, 202, 1)0%, rgba(242, 237, 223, 0.8)60%);
+    background: -o-linear-gradient(90deg, rgba(171, 194, 202, 1)0%, rgba(242, 237, 223, 0.8)60%);
+} */
+
+
+div.citytopics {
+    font-size: 40px;
+    font-weight: 600;
+    display: flex;
+    padding: 40px 40px 30px 40px;
+    text-align: left;
+    position: relative;
+    border: 8px solid #282828;
+    max-width: 1200px;
+    margin: auto;
+    flex-direction: column;
+    letter-spacing: 0.13em;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: #121416;
+}
+
+@media screen and (min-width:768px) and (max-width: 1200px) {
+    div.citytopics {
+        margin: 0 30px;
+        font-size: 32px;
+        border: 6px solid #121416;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    div.citytopics {
+        margin: 0 30px;
+        font-size: 28px;
+        border: 6px solid#121416;
+    }
+}
+
+span.dis {
+    font-size: 18px;
+    color: #121416;
+    font-weight: 600;
+    letter-spacing:0.5px;
+    padding: 15px 0;;
+}
+
+@media screen and (max-width: 1200px) {
+    span.dis {
+        font-size: 16px;
+    }
+}
+
+
+div.citylist {
+    /* border: 1px solid black; */
+    /* width: 1200px; */
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Proxima Nova";
+    color: #282828;
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 80px;
+    max-width: 1200px;
+}
+
+@media screen and (max-width: 1200px) {
+    div.citylist {
+        margin-top: 30px;
+    }
+}
+
+div.japan img {
+    width: 800px;
+    padding-top: 50px;
+}
+
+
+div.arrow img {
+    width: 40px;
+}
+
+div.citylist {
+    padding: 20px 0;
+}
+
+div.city {
+    /* border: 1px solid;
+    border-color: rgb(218, 224, 230); */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    margin: 20px;
+    overflow: hidden;
+    width: 200px;
+    position: relative;
+}
+
+@media screen and (max-width: 767px) {
+    div.city {
+        margin: 10px;
+    }
+}
+
+.cityphoto a img {
+    vertical-align: middle;
+    width: 100%;
+    
+}
+
+.cityphoto {
+    position: relative;
+    font-size: 0;
+    
+}
+
+.city h3 {
+    margin: 0px;
+}
+
+.cityname {
+    padding: 15px;
+    width: 100%;
+    display: inline-block;
+    letter-spacing: 0.5px;
+}

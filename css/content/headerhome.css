@@ -1,0 +1,133 @@
+.header{
+    margin: 0;
+  }
+
+header.header{
+    font-family: "Proxima Nova";
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    font-size: 0;
+}
+
+@media (max-width: 767px){
+    header.header{
+        width: 100%;
+      }
+    }
+
+header.header a.logo_img{
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
+header.header a.logo_img img{
+    height:60px;
+    margin: 0 auto;
+    text-align: center;
+    margin: 0 ;
+    /* position: absolute;
+    z-index: 999; */
+}
+header.header .account_img {
+    position: absolute;
+    right: 0;
+}
+header.header .account_img img{
+    height: 18px;
+    top:100px;
+}
+
+header.header nav.nav{
+    text-align: center;
+    /* border: 1px solid black; */   
+}
+
+header.header nav.nav ul.link_list{
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    /* position: absolute;
+    z-index: 9999; */
+}
+header.header nav.nav ul.link_list > li{
+    display: inline-block;
+    text-align: center;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+header.header nav.nav ul.link_list > li > a{
+    display: block;
+    /* vertical-align: bottom; */
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0px 10px;
+    min-width: 100px;
+    font-weight: 600;
+    color:#282828;
+}
+
+header.header a.logo_img{
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+}
+
+header.header nav.nav ul.link_list > li > a:visited {
+    color:#282828;
+}
+/* 
+header.header nav.nav ul.link_list > li > a:hover{
+    color: white;
+  } 
+   */
+header.header nav.nav ul.link_list > li div.city_block{
+    font-size: 14px;
+    position: relative;
+    min-width: 100px;
+    text-align: center;
+}
+ header.header nav.nav ul.link_list > li div.city_block:hover ul.city_list{
+    display: block;
+}
+header.header nav.nav ul.link_list > li div.city_block ul.city_list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    background-color: white;
+    min-width: 100%;
+    display: none;
+    /* border: 1px solid black; */
+}
+  
+header.header nav.nav ul.link_list > li div.city_block ul.city_list > li a{
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    position: relative;
+}
+header.header nav.nav ul.link_list > li div.city_block ul.city_list > li a::after{
+    content: "";
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    height: 1px;
+    background-color: gray;
+}
+header.header nav.nav ul.link_list > li div.city_block ul.city_list > li:last-child a::after{
+    height: 0;
+}
+header.header nav.nav ul.link_list > li div.city_block ul.city_list > li a:visited {
+    color:#282828;
+}

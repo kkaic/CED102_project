@@ -1,0 +1,112 @@
+*{ font-family: "Proxima Nova";
+}
+/* ----------TOPICS------------ */
+div.topics{
+    font-size: 28px;
+    margin: 0 auto;
+   /* padding-top: 100px; */
+   font-weight: 600;
+   padding: 15px;
+}
+/* ----------nav------------ */
+nav.topicstype{
+    font-family: "Proxima Nova";
+    color:#282828;
+    text-align: center;
+    /* padding-top: 100px; */
+    width: 750px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 80px;
+}
+
+@media screen and (min-width:576px) and (max-width: 767px) {
+    nav.topicstype{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    nav.topicstype {
+        width: 400px;
+    }
+}
+
+
+
+div.category{
+    font-size: 28px;
+    letter-spacing: 0.13em;
+    font-weight: bold;
+    position: absolute;
+    margin-top: -20px;
+    z-index: 9;
+}
+
+@media screen and (max-width: 767px) {
+    div.category{
+        font-size:24px;
+        padding-left: 30px;
+    }
+}
+
+
+
+nav.topicstype ul.topics_list{
+    list-style: none;
+    clear: both;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    position: relative;
+    width: 750px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 575px) {
+    nav.topicstype ul.topics_list{
+        width: 400px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width: 767px) {
+    nav.topicstype ul.topics_list {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 992px) {
+    nav.topicstype ul.topics_list {
+        width: 90%;
+    }
+}
+nav.topicstype ul.topics_list > li{
+    display: inline-block;
+    margin: 5px;
+    background-color: rgb(255, 255, 255);
+    color: #121416;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+
+
+
+nav.topicstype ul.topics_list > li > a{
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 10px;
+    min-width: 100px;
+    font-weight: 600;
+    letter-spacing: 1px; 
+}
+
+
+
+nav.topicstype ul.topics_list > li > a:visited {
+    color:#282828;
+}
+
+

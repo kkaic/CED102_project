@@ -1,0 +1,348 @@
+@import "./content/all.css";
+@import "./content/header.css";
+@import "./content/footer.css";
+@import "./content/topicsnav.css";
+
+/* ---------brad----------- */
+div.breadcrumb{
+    background-color: #f4f4f4;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  div.breadcrumb ol.breadcrumb_list{
+    margin: 0 auto;
+    padding: 10px;
+    list-style: none;
+    width: 768px;
+    padding-left: 0;
+  }
+
+  
+@media screen and (max-width: 992px) {
+    div.breadcrumb, div.breadcrumb ol.breadcrumb_list{
+        width:100%;
+    }
+}
+  div.breadcrumb ol.breadcrumb_list > li{
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  
+  
+  /* 利用 ::before 擬似元素，創造斜線做為分隔 */
+  div.breadcrumb ol.breadcrumb_list > li::before{
+    content: "/";
+    font-size: 18px;
+    color: #aaa;
+    margin-right: 12px;
+  }
+  /* 第一個 li 元素，將 ::before 設定回來需要的 */
+  div.breadcrumb ol.breadcrumb_list > li:first-child::before{
+    content: "";
+    margin-right: 0;
+  }
+  
+  
+  /* 基本文字樣式 */
+  div.breadcrumb ol.breadcrumb_list > li > a{
+    text-decoration: none;
+    display: inline-block;
+    color: #457755;
+    
+  }
+  
+  /* 滑動移過後改變文字顏色 */
+  div.breadcrumb ol.breadcrumb_list > li > a:hover{
+    color: #457755;
+  }
+  
+
+/* -----------title---------------- */
+div.type{
+    text-align: left;
+    padding-top:20px;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+  color: #868686;
+}
+
+@media screen and (max-width: 992px) {
+    div.type{
+        margin-left:20px;
+    }
+}
+
+
+
+div.type span{
+    background-color:#121416;
+    color: white;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    
+}
+
+div.article{
+    font-family: "Proxima Nova";
+    color:#282828;
+    text-align: center;
+    font-size: 18px;
+    clear: both;
+    position: relative;
+}
+
+
+@media screen and (min-width:576px) and (max-width: 767px) {
+    div.article{
+        width: 90%;
+    }
+}
+div.title{
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+    margin:20px 0;
+}
+@media screen and (max-width: 767px) {
+    div.title{
+        font-size: 26px;
+        margin-left:20px;
+    }
+}
+
+@media screen and (min-width:576px)and (max-width: 992px) {
+    div.title{
+        margin:10px 0 10px 20px;
+    }
+}
+div.topics_title_all{
+    /* border: 1px solid red; */
+    width:768px;
+    margin: 0 auto;
+    padding: 20px 0;
+    padding-top: 5px;
+}
+
+@media screen  and (max-width: 992px) {
+    div.topics_title_all{
+        width: 90%;
+    }
+}
+
+
+div.topics_title_all::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+div.topics_img img{
+    width: 768px;
+    /* position: absolute; */
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+    div.topics_img img {
+        width:100%;
+    }
+}
+div.topics_img{
+    font-size: 0; 
+}
+
+div.authorcontainer{
+    float: left;
+    margin-bottom: 10px;
+    /* border: 1px solid blue; */
+}
+
+@media screen  and (max-width: 992px) {
+    div.authorcontainer{
+        margin-left: 20px;
+    }
+}
+div.author{
+    /* border: 1px solid black; */
+    display: inline-block;
+    position: relative;
+}
+
+div.author a.photo img{
+    width:40px;
+    display: inline-block; 
+}
+
+@media screen and (max-width: 992px) {
+    div.author a.photo img{
+        width:35px;
+    }
+}
+div.name{
+    font-weight: 600;
+    /* border: 1px solid black; */
+    display: inline-block;
+    position: absolute;
+    padding-top: 4px;
+    padding-bottom: 10px;
+
+}
+
+@media screen and (max-width: 992px) {
+    div.name, div.date{
+        font-size: 14px;
+    }
+}
+
+div.date{
+    font-size: 14px;
+    color:#636464;
+    /* border: 1px solid black; */
+    display: inline-block;
+}
+
+div.topics_social1{
+    /* border: 1px solid black; */
+    /* display: inline-block; */
+    float: right;
+    /* margin-right: 340px; */
+    margin-top:15px;
+}
+
+@media screen and (max-width: 767px) {
+    div.topics_social1{
+        display: none;
+    }
+}
+div.topics_social1 span{
+    font-size: 10px;
+    font-weight: 600;
+    padding-right: 3px;
+}
+
+div.topics_social1 img{
+    width:25px;
+    padding: 3px;
+    position: relative;
+    top:5px;
+
+}
+
+
+/* --------------------------content----------------------- */
+
+
+div.article h1{
+    /*letter-spacing: 0.5px; */
+    margin: 0 auto;
+    width: 768px;
+    text-align: left;
+    padding: 15px 0;
+
+}
+
+div.content{
+    width:768px;
+    vertical-align: middle;
+    margin: 0 auto;
+    text-align: justify;
+    text-justify:inter-ideograph;
+    line-height:35px ;
+    margin-bottom: 100px;
+}
+
+
+@media screen and (max-width: 767px) {
+    div.content {
+        width: 90%;
+        font-size: 16px;
+        line-height:25px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 992px) {
+    div.content {
+        width: 90%;
+    }
+}
+
+div.violet img{
+    width:768px;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 992px) {
+    div.violet img{
+        width: 100%;
+    }
+}
+
+/* -----------foot-------------------- */
+
+
+
+div.tag{
+    display:inline-block;
+}
+div.tag img{
+    width:20px;
+}
+div.bottum{
+    position: relative;
+}
+
+div.bottum ul.hashtag{
+    padding-left: 0;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+div.bottum ul.hashtag li{
+    list-style: none;
+    display:inline-block;
+    line-height: 35px;
+    padding: 0 20px;
+    font-size: 12px;
+    color: #777;
+    font-weight: 500;
+    background-color: #f3f3f3;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+div.topics_social{
+    /* border: 1px solid black; */
+    display: inline-block;
+    position: absolute;
+    vertical-align: middle;
+    right: 0;
+    top:20px;
+}
+
+@media screen and (max-width: 767px) {
+    div.topics_social {
+        display: block;
+        position:static;
+    }
+}
+
+
+
+div.topics_social span{
+    font-size: 10px;
+    font-weight: 600;
+    padding-right: 3px;
+}
+div.topics_social img{
+    width:25px;
+    padding: 3px;
+    position: relative;
+    top:7px;
+}
