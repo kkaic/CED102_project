@@ -240,6 +240,11 @@ div.topics_social1 img{
 
 /* --------------------------content----------------------- */
 
+@media screen and (max-width: 992px) {
+    div.main, div.article{
+        width:100%;
+    }
+}
 
 div.article h1{
     /*letter-spacing: 0.5px; */
