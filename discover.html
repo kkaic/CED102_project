@@ -5,16 +5,20 @@
   <meta charset="utf-8">
   <title>INSPIRATIONS</title>
   <link rel="stylesheet" href="./css/discover.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="./vendors/aos/css/aos.css">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 </head>
 
 <body>
   <!-- ------------------------------------------header------------------------------------------------------>
-  <header class="header">
+ 
+  <header class="header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+     
     <a href="./index.html" class="logo_img"><img src="./image/normalheader-05.png"></a>
     <nav class="nav">
       <ul class="link_list">
-        <li><a href="#">ABOUT KISSA</a></li>
         <li><a href=".\city.html">CITIES</a>
           <div class="city_block">
             <ul class="city_list">
@@ -35,22 +39,36 @@
         </li>
         <li><a href="./discover.html">INSPIRATIONS</a></li>
         <li><a href="./topics.html">TOPICS</a></li>
-        
-        <li><a href="#" class="account_img"><img src="./image/icon/user.png"></a></li>
+        <li><a href="#">ABOUT KISSA</a></li>
+        <li><a href="#" class="account_img"><img src="./image/icon/round-account-button-with-user-inside.png"></a></li>
       </ul>
+      <div class="burger">
+        <!-- <input type="checkbox" class="checkbox"> -->
+        <div class="span-container">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+      </div>
     </nav>
+    
 
-  </header> 
-  
-  <!----------------------------------------------main--------------------------- -->
+  </header>
+  <div class="nav-container">
+    <a href="./city.html">CITIES</a>
+    <a href="./discover.html">INSPIRATIONS</a>
+    <a href="./topics.html">TOPICS</a>
+    <a href="#">ABOUT KISSA</a>
+  </div>
+  <!-- ------------------------------------------main------------------------------------------------------>
   <div class="main">
-    <div class=citytopics>INSPIRATIONS
+    <div class="citytopics" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900">INSPIRATIONS
       <!-- <hr class="user_title"> -->
       <span class="dis">Unique collections of traditional coffee shops in Japan.</span>
     </div>
 
-
-    <div class="citylist">
+    <div class="citylist" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
 
       <div class="city">
         <div class="cityphoto">
@@ -125,7 +143,7 @@
 
       <div class="city">
         <div class="cityphoto">
-          <a href="#"><img src="./image/discover/It's Tea Time.png"></a>
+          <a href="#"><img src="./image/discover/tea.png"></a>
         </div>
         <div class="cityname">
           <h3>It's Tea Time</h3>
@@ -158,12 +176,13 @@
           <h3>Fairy Dream</h3>
         </div>
       </div>
-      
+
     </div>
-    <div class="more"><a href="#" class="seemoreuser">Load More </a></div>
+    <div class="more" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"><a href="#"
+        class="seemoreuser">Load More </a></div>
 
   </div>
-  <!----------------------------------------------footer-------------------------------------------------------- -->
+  <!---------------------------------------------footer---------------------------------------------------->
   <footer class="footer">
     <div class="info">
       <div class="social">
@@ -179,9 +198,21 @@
         <li><a href="#">HELP</a></li>
       </ul>
     </div>
-    
+
     &copy; 2020 KISSA Ltd. All Rights Reserved.
   </footer>
 
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./vendors/aos/js/aos.js"></script>
+  <script>
+    AOS.init();
+
+    $('div.span-container').on("click", function(){
+      $('.nav-container').toggleClass("on")
+    });
+  </script>
 </body>
+
 </html>

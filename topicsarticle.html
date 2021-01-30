@@ -3,17 +3,21 @@
 
 <head>
   <meta charset="utf-8">
-  <title>KISSA</title>
+  <title>Kissaten: A Slowly Dying Part of Japanese Culture</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <link rel="stylesheet" href="./vendors/aos/css/aos.css">
   <link rel="stylesheet" href="./css/topicsarticle.css">
+
 </head>
 
 <body>
   <!-- ------------------------------------------header------------------------------------------------------>
-<header class="header"> 
+ 
+  <header class="header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+     
     <a href="./index.html" class="logo_img"><img src="./image/normalheader-05.png"></a>
     <nav class="nav">
       <ul class="link_list">
-        <li><a href="#">ABOUT KISSA</a></li>
         <li><a href=".\city.html">CITIES</a>
           <div class="city_block">
             <ul class="city_list">
@@ -34,24 +38,30 @@
         </li>
         <li><a href="./discover.html">INSPIRATIONS</a></li>
         <li><a href="./topics.html">TOPICS</a></li>
-        
-        <li><a href="#" class="account_img"><img src="./image/icon/user.png"></a></li>
+        <li><a href="#">ABOUT KISSA</a></li>
+        <li><a href="#" class="account_img"><img src="./image/icon/round-account-button-with-user-inside.png"></a></li>
       </ul>
+      <div class="burger">
+        <!-- <input type="checkbox" class="checkbox"> -->
+        <div class="span-container">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+      </div>
     </nav>
+    
 
   </header>
-  <!-- ------------------------------------------nav-------------------------------------------------------- -->
+  <div class="nav-container">
+    <a href="./city.html">CITIES</a>
+    <a href="./discover.html">INSPIRATIONS</a>
+    <a href="./topics.html">TOPICS</a>
+    <a href="#">ABOUT KISSA</a>
+  </div>
 
-  <!-- <nav class="topicstype">
-
-    <ul class="topics_list">
-      <li><a href="./topics.html">TOP</a></li>
-      <li><a href="#">CULTURE</a></li>
-      <li><a href="#">ART</a></li>
-      <li><a href="#">LOCAL</a></li>
-      <li><a href="#">NEWS</a></li>
-    </ul>
-  </nav> -->
+  <!-- ------------------------------------------nav------------------------------------------------------>
 
   <div class="breadcrumb">
     <ol class="breadcrumb_list">
@@ -61,12 +71,12 @@
       <li>Kissaten: A Slowly Dying Part of Japanese Culture</li>
     </ol>
   </div>
-  <!-- ------------------------------------------content------------------------------ -->
-  <div class="main">
-    
+  <!-- ------------------------------------------content------------------------------------------------------>
+  <div class="main" data-aos="fade-in" data-aos-duration="800">
+
     <div class="article">
 
-      
+
       <div class="topics_title_all">
         <div class="type">
           <span class="ca">Culture</span>
@@ -76,7 +86,8 @@
         </div>
         <div class="authorcontainer">
           <div class="author">
-            <a href="#" class="photo"><img src="./image/user_profile/sergio-de-paula-c_GmwfHBDzk-unsplash-ROUND.png"></a>
+            <a href="#" class="photo"><img
+                src="./image/user_profile/sergio-de-paula-c_GmwfHBDzk-unsplash-ROUND.png"></a>
           </div>
 
           <div class="name">Celeste Mills
@@ -157,11 +168,11 @@
         <div class="bottum">
           <!-- <div class="tag"><img src="https://i.imgur.com/Z0igTtL.png"></div> -->
           <ul class="hashtag">
-            <li># CULTURE</li>
-            <li># TRADITIONAL CAFE</li>
-            <li># JAPANESE</li>
-            <li># KISSATEN</li>
-            <li># COFFEE</li>
+            <li>CULTURE</li>
+            <li>TRADITIONAL CAFE</li>
+            <li>JAPANESE</li>
+            <li>KISSATEN</li>
+            <li>COFFEE</li>
           </ul>
           <div class="topics_social"><span>SHARE</span>
             <a href="#" class="topics_fb"><img src="./image/icon/facebook-logo.png"></a>
@@ -170,8 +181,15 @@
           </div>
         </div>
       </div>
+      <hr class="button">
 
+      <div class="button">
+        <div class="pre">PREV<br><span>A festival of new Asian art, seeking a direction</span></div>
+        <div class="next">NEXT<br><span>A collection of milestones in early images of Japan</span>
+        </div>
+      </div>
     </div>
+
   </div>
   <!-- ------------------------------------------footer-------------------------------------------------------- -->
   <footer class="footer">
@@ -191,6 +209,18 @@
     </div>
     &copy; 2020 KISSA Ltd. All Rights Reserved.
   </footer>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./vendors/aos/js/aos.js"></script>
+  <script>
+    AOS.init();
+
+    $('div.span-container').on("click", function(){
+      $('.nav-container').toggleClass("on")
+    });
+  </script>
 </body>
 
 </html>

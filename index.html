@@ -3,30 +3,26 @@
 
 <head>
   <meta charset="utf-8">
-  <title>KISSA.</title>
+  <title>KISSA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./vendors/aos/css/aos.css">
+
   <link rel="stylesheet" type="text/css" href="./slickall/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="./slickall/slick/slick-theme.css" />
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
-  </style>
+
 </head>
 
 <body>
-  <!-- ------------------------------------------header-------------------------------------------------------- -->
-
-  <header class="header">
-
+  <!-- ------------------------------------------header------------------------------------------------------>
+  <div class="half">
+  <header class="header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+   
+    <a href="./index.html" class="logo_img"><img src="./image/normalheader-05.png"></a>
     <nav class="nav">
-
       <ul class="link_list">
-
-        <li><a href="#">ABOUT KISSA</a></li>
-        <li><a href="./city.html">CITIES</a>
-
+        <li><a href=".\city.html">CITIES</a>
           <div class="city_block">
-
             <ul class="city_list">
               <li>
                 <a href="#">TOKYO</a>
@@ -43,180 +39,196 @@
             </ul>
           </div>
         </li>
-        <!-- <img src="./image/icon/down-arrow.png"> -->
-        <li><a href="./index.html" class="logo_img"><img src="./image/normalheader-05.png"></a></li>
         <li><a href="./discover.html">INSPIRATIONS</a></li>
         <li><a href="./topics.html">TOPICS</a></li>
-
-        <li class="account_img"><a href="#" class=""><img src="https://i.imgur.com/gwIgSon.png"></a></li>
+        <li><a href="#">ABOUT KISSA</a></li>
+        <li><a href="#" class="account_img"><img src="./image/icon/round-account-button-with-user-inside.png"></a></li>
       </ul>
-
+      <div class="burger">
+        <!-- <input type="checkbox" class="checkbox"> -->
+        <div class="span-container">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+      </div>
     </nav>
+    
 
   </header>
-
+  <div class="nav-container">
+    <a href="./city.html">CITIES</a>
+    <a href="./discover.html">INSPIRATIONS</a>
+    <a href="./topics.html">TOPICS</a>
+    <a href="#">ABOUT KISSA</a>
+  </div>
   <!-- ------------------------------------------main-------------------------------------------------------- -->
   <main class="one">
-    <div class="title">
-      <div class="kissa">KISSA<br>is a Traditional Japnese<br> Coffee Shop Guide</div>
-      <!-- <div class="portal">Welcome to a portal to the good old days.</div> -->
-    </div>
+
+
+
     <div class="home">
-      <div class="home_img"><a href="#" class="home_img">
-          <img src="./image/home/1tokyo-japan-sucha800.jpg"></a>
+      <div class="home_img"  data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="750"><a href="#" class="home_img">
+          <img src="./image/home/1tokyo-japan-sucha8002.jpg.png"></a>
         <div class="tokyo">
           <span class="title">OSAKA /</span>
           <span>Bonna Coffee</span>
         </div>
       </div>
       <div class="home_img"><a href="#" class="home_img">
-          <img src="./image/home/2-thomas800.jpg"></a>
+          <img src="./image/home/2-thomas8002.png"></a>
         <div class="tokyo">
           <span class="title">TOKYO /</span>
           <span>Chatei Hatou Coffee</span>
         </div>
       </div>
       <div class="home_img"><a href="#" class="home_img">
-          <img src="./image/homE/tokyo.chatei hatou800.jpg"></a>
+          <img src="./image/homE/tokyo.chatei hatou8002.png"></a>
         <div class="tokyo">
           <span class="title">KOBE /</span>
           <span>Homeri Cafe</span>
         </div>
       </div>
     </div>
-    <!-- <div class="arrow"><span>Scroll Down</span><img src="./image/icon/down-arrow.png"></div> -->
+
+    <div class="title" >
+      <div class="kissa" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="750">Explore<br> Traditional<br>Coffee Shop<br> In Japan</div>
+    </div>
 
   </main>
 
+</div>
 
+  <!---------------------------------------------we recommended----------------------------------------------->
+  <div class="back">
+    <div class="userrecommanded">
+      <div class="user_title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="780"
+      data-aos-anchor-placement="center-bottom">
+        <span class="recommended">We Recommended</span>
+        <span class="dis">We've found nice traditional coffee shop that you will love at the beginning of 2021.</span>
+      </div>
 
-  <!----------------------------------------------we recommended----------------------------------------------->
-  <div class="userrecommanded">
-    <div class="user_title">WE RECOMMANDED
-      <hr class="user_title">
-      <span class="dis">We've found nice traditional coffee shop that you will love at the beginning of 2021.</span>
-    </div>
-
-    <div class="courses-container">
-      <!-- ---------------------------------1------------------------------------------- -->
-      <div class="course">
-        <div class="cafephoto">
-          <h6>TOKYO</h6>
-          <a href="./tokyoshop.html"><img src="./image/tokyo_list/image.png"></a>
-        </div>
-        <div class="course-info">
-          <h3>Café Trois Chambres</h3>
-          <div class="bookmark">
-            <img src=".\image\icon\bookmark.png">
+      <div class="courses-container" >
+        <!-- --------------------------------1------------------------------------------- -->
+        <div class="course" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="760"
+        data-aos-anchor-placement="center-bottom">
+          <div class="cafephoto">
+            <h6>TOKYO</h6>
+            <a href="./tokyoshop.html"><img src="./image/tokyo_list/image.png"></a>
           </div>
-          <div class="location">
-            <img src="./image/icon/map-placeholder.png">Setagaya City
-          </div>
-          <!-- <div class="founded">
+          <div class="course-info">
+            <h3>Café Trois Chambres</h3>
+            <div class="bookmark">
+              <img src=".\image\icon\bookmark.png">
+            </div>
+            <div class="location">
+              <img src="./image/icon/map-placeholder.png">Setagaya City
+            </div>
+            <!-- <div class="founded">
             <img src=".\image\icon\shop.png">Founded in 1980
           </div> -->
-          <div class="user">
-            <a href="#" class="anne"><img src="https://i.imgur.com/MGIslIg.png"></a>
-            <a href="#" class="donn"><img src="https://i.imgur.com/w9Vpl4y.png"></a>
-            <a href="#" class="sicong"><img src="https://i.imgur.com/nJGilSi.png"></a>
-            <span class="ossme">223 people liked</span>
-            <img class="heart" src="./image/icon/heart.png">
+            <div class="user">
+              <a href="#" class="anne"><img src="./image/user_profile/anne-ROUND.png"></a>
+              <a href="#" class="donn"><img src="./image/user_profile/donn-round.png"></a>
+              <a href="#" class="sicong"><img src="./image/user_profile/sicong-round.png"></a>
+              <span class="ossme">223 people liked</span>
+              <img class="heart" src="./image/icon/heart.png">
+            </div>
           </div>
         </div>
-      </div>
-      <!-- ---------------------------------2------------------------------------------- -->
-      <div class="course">
-        <div class="cafephoto2">
-          <h6>KOBE</h6>
-          <a href="#"><img src="./image/tokyo_list/kobe-evian coffee bar.png"></a>
-        </div>
-        <div class="course-info">
-          <h3>EVIAN Coffee Bar</h3>
-          <div class="bookmark">
-            <img src=".\image\icon\bookmark.png">
+        <!-- --------------------------------2------------------------------------------- -->
+        <div class="course" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="740"
+        data-aos-anchor-placement="center-bottom">
+          <div class="cafephoto2">
+            <h6>KOBE</h6>
+            <a href="#"><img src="./image/tokyo_list/kobe-evian coffee bar.png"></a>
           </div>
-          <div class="location">
-            <img src="./image/icon/map-placeholder.png">Setagaya City
-          </div>
-          <!-- <div class="founded">
+          <div class="course-info">
+            <h3>EVIAN Coffee Bar</h3>
+            <div class="bookmark">
+              <img src=".\image\icon\bookmark.png">
+            </div>
+            <div class="location">
+              <img src="./image/icon/map-placeholder.png">Setagaya City
+            </div>
+            <!-- <div class="founded">
             <img src=".\image\icon\shop.png">Founded in 1952
           </div> -->
-          <div class="user">
-            <a href="#" class="anne"><img src="https://i.imgur.com/MGIslIg.png"></a>
-            <a href="#" class="donn"><img src="https://i.imgur.com/w9Vpl4y.png"></a>
-            <a href="#" class="sicong"><img src="https://i.imgur.com/nJGilSi.png"></a>
-            <span class="ossme">97 people liked</span>
-            <img class="heart" src="./image/icon/heart.png">
+            <div class="user">
+              <a href="#" class="anne"><img src="./image/user_profile/anne-ROUND.png"></a>
+              <a href="#" class="donn"><img src="./image/user_profile/donn-round.png"></a>
+              <a href="#" class="sicong"><img src="./image/user_profile/sicong-round.png"></a>
+              <span class="ossme">223 people liked</span>
+              <img class="heart" src="./image/icon/heart.png">
+            </div>
           </div>
         </div>
-      </div>
-      <!-- --------------------------------3------------------------------------------- -->
-      <div class="course">
-        <div class="cafephoto3">
-          <h6>NAGOYA</h6>
-          <a href="#"><img src="./image/tokyo_list/nagoya-Pelican1964.jpg.png"></a>
-        </div>
-        <div class="course-info">
-          <h3>PELICAN Coffee</h3>
-          <div class="bookmark">
-            <img src=".\image\icon\bookmark.png">
+        <!-- --------------------------------3------------------------------------------- -->
+        <div class="course" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="720"
+        data-aos-anchor-placement="center-bottom">
+          <div class="cafephoto3">
+            <h6>NAGOYA</h6>
+            <a href="#"><img src="./image/tokyo_list/nagoya-Pelican1964.jpg.png"></a>
           </div>
-          <div class="location">
-            <img src="./image/icon/map-placeholder.png">Setagaya City
-          </div>
-          <!-- <div class="founded">
+          <div class="course-info">
+            <h3>PELICAN Coffee</h3>
+            <div class="bookmark">
+              <img src=".\image\icon\bookmark.png">
+            </div>
+            <div class="location">
+              <img src="./image/icon/map-placeholder.png">Setagaya City
+            </div>
+            <!-- <div class="founded">
             <img src=".\image\icon\shop.png">Founded in 1942
           </div> -->
-          <div class="user">
-            <a href="#" class="anne"><img src="https://i.imgur.com/MGIslIg.png"></a>
-            <a href="#" class="donn"><img src="https://i.imgur.com/w9Vpl4y.png"></a>
-            <a href="#" class="sicong"><img src="https://i.imgur.com/nJGilSi.png"></a>
-            <span class="ossme">123 people liked</span>
-            <img class="heart" src="./image/icon/heart.png">
+            <div class="user">
+              <a href="#" class="anne"><img src="./image/user_profile/anne-ROUND.png"></a>
+              <a href="#" class="donn"><img src="./image/user_profile/donn-round.png"></a>
+              <a href="#" class="sicong"><img src="./image/user_profile/sicong-round.png"></a>
+              <span class="ossme">223 people liked</span>
+              <img class="heart" src="./image/icon/heart.png">
+            </div>
           </div>
         </div>
+        <!-- --------------------------------4------------------------------------------- -->
+        <div class="course" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700"
+        data-aos-anchor-placement="center-bottom">
+          <div class="cafephoto4">
+            <h6>FUKUOKA</h6>
+            <a href="#"><img src="./image/tokyo_list/Chatei Hatou.shibuya.1989.jpg.png"></a>
+          </div>
+          <div class="course-info">
+            <h3>Chatei Hatou</h3>
+            <div class="bookmark">
+              <img src=".\image\icon\bookmark.png">
+            </div>
+            <div class="location">
+              <img src="./image/icon/map-placeholder.png">Shibuya City
+            </div>
+            <div class="user">
+              <a href="#" class="anne"><img src="./image/user_profile/anne-ROUND.png"></a>
+              <a href="#" class="donn"><img src="./image/user_profile/donn-round.png"></a>
+              <a href="#" class="sicong"><img src="./image/user_profile/sicong-round.png"></a>
+              <span class="ossme">223 people liked</span>
+              <img class="heart" src="./image/icon/heart.png">
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <div class="course">
-        <div class="cafephoto4">
-          <h6>TOKYO</h6>
-          <a href="#"><img src="./image/tokyo_list/Chatei Hatou.shibuya.1989.jpg.png"></a>
-        </div>
-        <div class="course-info">
-          <h3>Chatei Hatou</h3>
-          <div class="bookmark">
-            <img src=".\image\icon\bookmark.png">
-          </div>
-          <div class="location">
-            <img src="./image/icon/map-placeholder.png">Shibuya City
-          </div>
-          <!-- <div class="founded">
-            <img src=".\image\icon\shop.png">Founded in 1989
-          </div> -->
-          <div class="user">
-            <a href="#" class="anne"><img src="https://i.imgur.com/MGIslIg.png"></a>
-            <a href="#" class="donn"><img src="https://i.imgur.com/w9Vpl4y.png"></a>
-            <a href="#" class="sicong"><img src="https://i.imgur.com/nJGilSi.png"></a>
-            <span class="ossme">67 people liked</span>
-            <img class="heart" src="./image/icon/heart.png">
-          </div>
-        </div>
-      </div>
-
+      <div class="more"><a href="./city.html" class="seemoreuser">Explore More Cities</a></div>
     </div>
-
-    <div class="more"><a href="./city.html" class="seemoreuser">Explore More Cities</a></div>
   </div>
   <!---------------------------------------------inspirations-------------------------------------------------->
-  <div class="inspirations">
-    <div class="topics_title">INSPIRATIONS
-      <hr class="user_title">
+  <div class="inspirations" data-aos="fade-in" data-aos-duration="500"
+  data-aos-anchor-placement="center-bottom">
+    <div class="topics_title">
+      <span class="recommended">Inspirations</span>
       <span class="dis">Unique collections of traditional coffee shop in Japan, all hand-picked by KISSA</span>
-
     </div>
-
     <div class="citylist">
-
       <div class="city">
         <div class="cityphoto">
           <a href="#"><img src="./image/discover/retro lovers.png"></a>
@@ -225,7 +237,6 @@
           <h3>Retro Lovers</h3>
         </div>
       </div>
-
       <div class="city">
         <div class="cityphoto">
           <a href="#"><img src="./image/discover/Good Cup Of Coffee (1).png"></a>
@@ -234,7 +245,6 @@
           <h3>Good Coffee</h3>
         </div>
       </div>
-
       <div class="city">
         <div class="cityphoto">
           <a href="#"><img src="./image/discover/Unique Interioe.png"></a>
@@ -243,7 +253,6 @@
           <h3>Unique Interior</h3>
         </div>
       </div>
-
       <div class="city">
         <div class="cityphoto">
           <a href="#"><a href="#"><img src="./image/discover/smoke free.png"></a>
@@ -252,7 +261,6 @@
           <h3>Smoke Free Cafes</h3>
         </div>
       </div>
-
       <div class="city">
         <div class="cityphoto">
           <a href="#"><img src="./image/discover/Jazz Night.png"></a>
@@ -261,56 +269,75 @@
           <h3>Jazz Night</h3>
         </div>
       </div>
-
       <br>
       <div class="more"><a href="./discover.html" class="seemoreuser">Get Inspired</a></div>
     </div>
-
-
   </div>
   <!---------------------------------------------topics-------------------------------------------------------->
-  <div class="topics">
-    <div class="topics_title">TOPICS
-      <hr class="user_title">
-      <span class="dis">Top stories on what makes traditional cultures special and unique</span>
+  <div class="back" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900"
+  data-aos-anchor-placement="center-bottom">
+    <div class="topics">
+      <div class="user_title">
+        <span class="recommended">Topics</span>
+        <span class="dis">Highlights on what makes traditional cultures special and unique.</span>
+      </div>
+
+      <div class="alltopics">
+        <section class="cards">
+          <article class="card card--1" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500"
+          data-aos-anchor-placement="center-bottom">
+            <div class="card__info-hover">
+            </div>
+            <div class="card__img"></div>
+            <a href="./topicsarticle.html" class="card_link">
+              <div class="card__img--hover"></div>
+            </a>
+            <div class="card__info">
+              <span class="card__category"> CULTURE</span>
+              <h3 class="card__title">Kissaten: A Slowly Dying Part of Japanese Culture</h3>
+              <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
+            </div>
+          </article>
+
+
+          <article class="card card--2" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="500"
+          data-aos-anchor-placement="center-bottom">
+            <div class="card__info-hover">
+            </div>
+            <div class="card__img"></div>
+            <a href="#" class="card_link">
+              <div class="card__img--hover"></div>
+            </a>
+            <div class="card__info">
+              <span class="card__category"> ART</span>
+              <h3 class="card__title">Art project encourages evacuees of disaster-hit Fukushima town</h3>
+              <span class="card__by">by <a href="#" class="card__author" title="author">John Doe</a></span>
+            </div>
+          </article>
+
+        </section>
+        <br>
+      </div>
+      <div class="more3"><a href="./topics.html" class="seemoreuser3">Read More</a></div>
+    </div>
+  </div>
+
+  <!---------------------------------------------About----------------------------------------------->
+  <div class="down">
+    <div class="about" >
+    <div class="abtimg"><img src="./image/home/about.png"></div>
+    <div class="user_title1">
+      <span class="recommended1">About KISSA</span>
+      <span class="dis1">Culture Trip is your trusted shortcut to booking travel that’s good, and makes you feel good.
+        Because everything we do starts with you. In one single platform, you can discover and book spot-on stays and
+        experiences.
+      </span>
+      <div class="more4"><a href="./topics.html" class="seemoreuser4">About Us</a>
+      <a href="#" class="seemoreuser5">Work with Us</a></div>
 
     </div>
 
-    <div class=alltopics>
-      <section class="cards">
-        <article class="card card--1">
-          <div class="card__info-hover">
-          </div>
-          <div class="card__img"></div>
-          <a href="./topicsarticle.html" class="card_link">
-            <div class="card__img--hover"></div>
-          </a>
-          <div class="card__info">
-            <span class="card__category"> CULTURE</span>
-            <h3 class="card__title">Kissaten: A Slowly Dying Part of Japanese Culture</h3>
-            <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
-          </div>
-        </article>
-
-
-        <article class="card card--2">
-          <div class="card__info-hover">
-          </div>
-          <div class="card__img"></div>
-          <a href="#" class="card_link">
-            <div class="card__img--hover"></div>
-          </a>
-          <div class="card__info">
-            <span class="card__category"> ART</span>
-            <h3 class="card__title">Art project encourages evacuees of disaster-hit Fukushima town</h3>
-            <span class="card__by">by <a href="#" class="card__author" title="author">John Doe</a></span>
-          </div>
-        </article>
-      </section>
-      <br>
-
-    </div>
-    <div class="more"><a href="./topics.html" class="seemoreuser">Read More</a></div>
+  </div>
   </div>
   <!---------------------------------------------footer-------------------------------------------------------->
   <footer class="footer">
@@ -328,7 +355,7 @@
         <li><a href="#">HELP</a></li>
       </ul>
     </div>
-    
+
     &copy; 2020 KISSA Ltd. All Rights Reserved.
   </footer>
 
@@ -336,14 +363,26 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript" src="./slickall/slick/slick.min.js"></script>
 
-  <script>
-    $('.home').slick({
+
+<script src="./vendors/aos/js/aos.js"></script>
+<script>
+  AOS.init();
+
+  $('.home').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 1000,
+      autoplaySpeed: 3000,
     });
-  </script>
+
+
+    $('.span-container').on("click", function(){
+      $('.nav-container').toggleClass("on")
+    })
+</script>
+
+
 
 </body>
+
 </html>

@@ -1,17 +1,22 @@
-*{ font-family: "Proxima Nova";
+* {
+    font-family: "Proxima Nova";
 }
+
 /* ----------TOPICS------------ */
-div.topics{
+
+div.topics {
     font-size: 28px;
     margin: 0 auto;
-   /* padding-top: 100px; */
-   font-weight: 600;
-   padding: 15px;
+    /* padding-top: 100px; */
+    font-weight: 600;
+    padding: 15px;
 }
+
 /* ----------nav------------ */
-nav.topicstype{
+
+nav.topicstype {
     font-family: "Proxima Nova";
-    color:#282828;
+    color: #282828;
     text-align: center;
     /* padding-top: 100px; */
     width: 750px;
@@ -20,21 +25,19 @@ nav.topicstype{
     margin-top: 80px;
 }
 
-@media screen and (min-width:576px) and (max-width: 767px) {
-    nav.topicstype{
+@media screen and (max-width: 767px) {
+    nav.topicstype {
         width: 90%;
     }
 }
 
-@media screen and (max-width: 575px) {
+/* @media screen and (max-width: 575px) {
     nav.topicstype {
         width: 400px;
     }
-}
+} */
 
-
-
-div.category{
+div.category {
     font-size: 28px;
     letter-spacing: 0.13em;
     font-weight: bold;
@@ -44,15 +47,13 @@ div.category{
 }
 
 @media screen and (max-width: 767px) {
-    div.category{
-        font-size:24px;
+    div.category {
+        font-size: 24px;
         padding-left: 30px;
     }
 }
 
-
-
-nav.topicstype ul.topics_list{
+nav.topicstype ul.topics_list {
     list-style: none;
     clear: both;
     margin: 0 auto;
@@ -65,24 +66,19 @@ nav.topicstype ul.topics_list{
     color: #121416;
 }
 
-@media screen and (max-width: 575px) {
-    nav.topicstype ul.topics_list{
-        width: 400px;
-    }
-}
-
 @media screen and (min-width:576px) and (max-width: 767px) {
     nav.topicstype ul.topics_list {
         width: 90%;
     }
 }
 
-@media screen and (min-width:768px) and (max-width: 992px) {
+@media screen and (max-width: 575px) {
     nav.topicstype ul.topics_list {
         width: 90%;
     }
 }
-nav.topicstype ul.topics_list > li{
+
+nav.topicstype ul.topics_list>li {
     display: inline-block;
     margin: 5px;
     background-color: rgb(255, 255, 255);
@@ -91,24 +87,28 @@ nav.topicstype ul.topics_list > li{
     border-radius: 3px;
 }
 
+nav.topicstype ul.topics_list>li:hover {
+    display: inline-block;
+    margin: 5px;
+    color: #fafafa;
+    font-size: 14px;
+    border-radius: 3px;
+    background: #638f89;
+    transition-duration: 0.3s;
+    transform: perspective(1px) translateZ(0);
+}
 
-
-
-nav.topicstype ul.topics_list > li > a{
+nav.topicstype ul.topics_list>li>a {
     display: inline-block;
     font-size: 14px;
     text-decoration: none;
     padding: 5px 10px;
     min-width: 100px;
     font-weight: 600;
-    letter-spacing: 1px; 
+    letter-spacing: 1px;
     color: #121416;
 }
 
-
-
-nav.topicstype ul.topics_list > li > a:visited {
-    color:#282828;
+nav.topicstype ul.topics_list>li>a:visited {
+    color: #282828;
 }
-
-

@@ -8,7 +8,7 @@ header.header {
     margin: 0 auto;
     font-size: 0;
     position: relative;
-    z-index:100;
+    z-index: 100;
 }
 
 @media (max-width: 1200px) {
@@ -23,7 +23,7 @@ header.header a.logo_img {
 }
 
 header.header a.logo_img img {
-    height: 70px;
+    height: 75px;
 }
 
 header.header a.account_img img {
@@ -36,7 +36,7 @@ header.header nav.nav {
     float: right;
     padding: 10px;
     position: relative;
-    top: 5px;
+    top: 10px;
 }
 
 header.header nav.nav ul.link_list {
@@ -61,18 +61,31 @@ header.header nav.nav ul.link_list>li {
 
 header.header nav.nav ul.link_list>li>a {
     display: inline-block;
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: none;
     padding: 5px 10px;
     min-width: 100px;
-    font-weight: 650;
-    color: #282828;
+    font-weight: 600;
+    color: rgb(249, 248, 244);
     letter-spacing: 0.15em;
+    top: 5px;
 }
 
-header.header nav.nav ul.link_list>li>a:visited {
-    color: #282828;
+header.header nav.nav ul.link_list>li>a:hover {
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 5px 10px;
+    min-width: 100px;
+    font-weight: 600;
+    color: #c75656;
+    letter-spacing: 0.15em;
+    top: 5px;
 }
+
+/* header.header nav.nav ul.link_list>li>a:visited {
+    color: #fafafa;
+} */
 
 /* header.header nav.nav ul.link_list > li > a:hover{
     color: white;
@@ -130,7 +143,6 @@ header.header nav.nav ul.link_list>li div.city_block ul.city_list>li a:visited {
     color: #282828;
 }
 
-
 /* ---------------------漢堡----------------------- */
   
   /* //  --------BURGER MENU CODE :D  */
@@ -144,7 +156,6 @@ header.header nav.nav ul.link_list>li div.city_block ul.city_list>li a:visited {
     align-items: center;
     /* padding: 2rem; */
     position: relative;
-    font-size: 0;
 
   }
 
@@ -298,4 +309,5 @@ header.header nav.nav ul.link_list>li div.city_block ul.city_list>li a:visited {
   .nav-container>a {
         margin-right: 1.5rem;
       }
+  
   

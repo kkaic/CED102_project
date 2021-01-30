@@ -2,178 +2,186 @@
 @import "./content/header.css";
 @import "./content/footer.css";
 @import "./content/topicsnav.css";
-
-*{ font-family: "Proxima Nova";
+* {
+    font-family: "Proxima Nova";
 }
+
 /* ----------TOPICS------------ */
-div.city_topics{
-    font-size: 28px;
+
+div.city_topics {
+    font-size: 40px;
     margin: 0 auto;
-   padding-top: 100px;
-   font-weight: 600;
-   padding: 15px;
-   color:#282828;
-   text-align: center;
-   padding-bottom: 5px;
+    font-weight: 600;
+    padding: 20px 0px;
+    color: #282828;
+    text-align: center;
+    /* padding-bottom: 10px; */
 }
 
-div.city_topics img{
-    width:20px;
+@media screen and (max-width: 767px) {
+    div.city_topics {
+        font-size: 32px;
+    }
+}
+
+div.city_topics img {
+    width: 20px;
     margin-left: 15px;
+    cursor: pointer;
 }
 
-div.city_topics span{
+div.city_topics span {
     font-size: 8px;
     font-weight: 400;
-    color:#757575
+    color: #757575
 }
-/* ---------brad----------- */
-div.breadcrumb{
-    background-color: #dfdddd;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-  }
-  div.breadcrumb ol.breadcrumb_list{
-    margin: 0 auto;
-    padding: 10px;
-    list-style: none;
-    width: 1100px;
-    padding-left: 40px;
-  }
-  div.breadcrumb ol.breadcrumb_list > li{
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  
-  
-  /* 利用 ::before 擬似元素，創造斜線做為分隔 */
-  div.breadcrumb ol.breadcrumb_list > li::before{
-    content: "/";
-    font-size: 18px;
-    color: #aaa;
-    margin-right: 12px;
-  }
-  /* 第一個 li 元素，將 ::before 設定回來需要的 */
-  div.breadcrumb ol.breadcrumb_list > li:first-child::before{
-    content: "";
-    margin-right: 0;
-  }
-  
-  
-  /* 基本文字樣式 */
-  div.breadcrumb ol.breadcrumb_list > li > a{
-    text-decoration: none;
-    display: inline-block;
-    color: #457755;
-    
-  }
-  
-  /* 滑動移過後改變文字顏色 */
-  div.breadcrumb ol.breadcrumb_list > li > a:hover{
-    color: #457755;
-  }
-  
 
+@media screen and (max-width: 576px) {
+    span.like{
+        display:block;
+        padding-top: 10px;
+    }
+}
 
 /* ----------main------------ */
 
-div.cafe_info_all{
+div.cafe_info_all {
     /* border: 1px solid black; */
     width: 1100px;
     margin: 0 auto;
-    
 }
 
-div.user{
-    margin-top: 15px;
-    padding-left: 5px;
-    /* padding:5px; */
-    position: relative;
+div.mid {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    div.cafe_info_all, div.mid {
+        width: 100%;
+    }
+}
+
+div.type {
     text-align: center;
-    padding-bottom: 20px;
-    
+    padding-top: 80px;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    color: #868686;
 }
 
-div.user img{
-    width: 25px;
-}
-
-span.ossme{
-    font-size: 14px;
-    color: #948D8B;
+div.type>a {
+    background-color: #DFAD2A;
+    color: #282828;
+    border-radius: 5px;
     padding: 5px;
+    font-size: 12px;
     font-weight: 600;
-    top:5px;
+    cursor: pointer;
+    text-decoration: none;
 }
-    
 
-div.location{
+div.location {
     text-align: center;
     padding: 15px;
-    padding-top:5px;
+    padding-top: 5px;
     padding-left: 10px;
     font-weight: 550;
-    
 }
 
-div.location span{
+div.location span {
     font-weight: 550;
     padding-left: 3px;
-    color:#282828;
+    color: #282828;
 }
-div.location img{
-    width:15px;
+
+div.location img {
+    width: 15px;
     margin: 0px auto;
 }
-div.photoall{
+
+div.photoall {
     margin-bottom: 30px;
 }
-div.city_list_photo{
+
+div.city_list_photo {
     text-align: center;
-    width: 1100px;
+    width: 600px;
     /* border: 1px solid black; */
-    height:500px;
+    height: 450px;
     overflow: hidden;
-
-
 }
 
-div.city_list_photo img{
+div.city_list_photo img {
     text-align: center;
-    top:50px;
     margin: 0 auto;
 }
 
+@media screen and (max-width: 992px) {
+    div.city_list_photo {
+        width: 100%;
+        height: 100%;
+    }
+}
 
-div.intro{
-    width: 53%;
-    /* border: 1px solid black; */
-    /* margin-right: 20px; */
+@media screen and (max-width: 992px) {
+    div.city_list_photo img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .slick-prev:before, .slick-next:before{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .slick-next, .slick-arrow{
+       right: 0;
+    }
+}
+
+
+
+div.intro {
+    width: 60%;
     padding: 20px;
     margin-left: 30px;
-    /* margin-right: 30px; */
     margin-top: 20px;
     padding-top: 0;
 }
 
-div.topics_social1{
+@media screen and (max-width: 767px) {
+    div.intro {
+        width: 90%;
+        text-align: center;
+        margin-left: 15px;
+    }
+}
+
+div.topics_social1 {
     /* border: 1px solid black; */
     display: inline-block;
     /* float: left; */
-    margin-right: 340px;
-    margin-top:10px;
-
+    margin-right: 0px;
+    margin-top: 10px;
 }
 
-div.topics_social1 img{
-    width:25px;
+@media screen and (max-width: 767px) {
+    div.topics_social1 {
+        margin-right: 0px;
+    }
+}
+
+div.topics_social1 img {
+    width: 25px;
     padding: 3px;
-
 }
 
-div.topics_social1 span{
+div.topics_social1 span {
     font-size: 10px;
     font-weight: 600;
     padding-right: 3px;
@@ -181,280 +189,467 @@ div.topics_social1 span{
     bottom: 6px;
 }
 
-
-div.para{
+div.para {
     text-align: justify;
-    text-justify:inter-ideograph;
+    text-justify: inter-ideograph;
     line-height: 35px;
     font-size: 18.5px;
 }
 
-div.intro, div.cafeinfo{
+div.intro, div.cafeinfo {
     display: inline-block;
     vertical-align: top;
 }
 
 hr.user_title {
     border: 0;
-    height: 2px;
+    height: 3px;
     background: #282828;
-    width: 70px;
+    width: 50px;
     margin-left: 0;
     margin-bottom: 0;
 }
 
-hr.sep{
-    border: 0;
-    height:0.5px;
-    background: #e9e6e5;
-    width: 1100px;
-    opacity: 0.9;
-}
-div.cafeinfo{
-    /* border: 1px solid black; */
-    width: 35%;
-    padding-left: 30px;
-    margin-top: 20px;
-    color:#282828;
-    
+@media screen and (max-width: 767px) {
+    hr.user_title {
+        border: 0;
+        height: 3px;
+        background: #282828;
+        width: 50px;
+        margin: 0 auto;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
 }
 
-div.cafeinfo h3{
-    margin-bottom: 10px;
+hr.sep {
+    border: 0;
+    height: 0.5px;
+    background: #e9e6e5;
+    width: 100%;
+    opacity: 0.9;
 }
-div.cafeinfo span.item{
+
+div.cafeinfo {
+    /* border: 1px solid black; */
+    width: 35%;
+    padding-left: 40px;
+    margin-top: 7px;
+    color: #282828;
+}
+
+@media screen and (max-width: 767px) {
+    div.cafeinfo {
+        width: 90%;
+        padding-top: 20px;
+        text-align: center;
+    }
+}
+
+div.cafeinfo h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    letter-spacing: 0.13em;
+}
+
+div.cafeinfo span.item {
     font-size: 18px;
     font-weight: 700;
     line-height: 35px;
     text-align: justify;
-    text-justify:inter-ideograph;
+    text-justify: inter-ideograph;
 }
 
-div.cafeinfo span.item_content{
-    color:#545453;
+div.cafeinfo span.item_content {
+    color: #545453;
     text-align: justify;
-    text-justify:inter-ideograph;
+    text-justify: inter-ideograph;
     line-height: 35px;
 }
 
-div.add{
+div.add {
     display: block;
-    padding: 5px;
-    border-radius: 10px;
+    padding: 10px;
     background-color: rgb(255, 255, 255);
-    border: 2px solid black;
+    border: 1.5px solid black;
     border-radius: 2em;
     font-size: 16px;
     text-align: center;
-    margin-top: 50px;
     width: 200px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    cursor: pointer;
 }
 
-div.add img{
-    width:20px;
+div.add:hover {
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #638f89;
+    border: 1.5px solid #638f89;
+    border-radius: 2em;
+    font-size: 16px;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+    div.add {
+        margin-bottom: 50px;
+    }
+}
+
+div.add img {
+    width: 20px;
     position: relative;
-    top:3px;
-
+    top: 3px;
 }
 
-div.add span{
+div.add span {
     font-size: 16px;
     margin: 5px;
     font-weight: 600;
-    color:#282828;
+    color: #282828;
     position: relative;
-    bottom:1px;
+    bottom: 2px;
 }
 
-
-
 /* ---------------comments */
+
 .slick-prev:before, .slick-next:before {
     color: #282828;
 }
-div.comment{
+
+div.comment {
     /* border: 1px solid black; */
     width: 100%;
-    margin-left: 25px;
-    padding: 0 20px;
-    padding-bottom: 50px;
+    background-color: #f4f4f4;
+    padding: 0 40px;
+    padding-bottom: 80px;
     padding-top: 30px;
     display: inline-block;
     /* background-color: #eee; */
+    margin: 50px 0;
 }
-div.comments_card{
+
+@media screen and (max-width: 1200px) {
+    div.comment {
+        width: 100%;
+    }
+}
+
+div.comments_card {
     display: inline-block;
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
     border-radius: 10px;
     /* background-color: #eeecec; */
-    
-}
-div.comments_card span{
-    font-size:12px;
-    color:#948D8B;
+    width: 500px;
 }
 
-div.comment h3{
-    display: inline-block;
-    margin: 20px;
-    margin-left: 0;
-    padding-bottom: 10px;
+
+/* @media screen and (min-width: 768px){
+.slick-initialized .slick-slide{
+    width:500px;
+}
+} */
+
+div.comments_card span {
+    font-size: 12px;
+    color: #948D8B;
 }
 
-div.pen{
+div.comment h3 {
     display: inline-block;
-    padding: 5px;
+    margin-left: 40px;
+    font-size: 22px;
+    letter-spacing: 0.13em;
+    font-weight: bold;
+    position: absolute;
+    margin-top: -45px;
+    z-index: 9;
+}
+
+div.pen {
+    display: inline-block;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
-    padding: 5px 1em;
+    padding: 7px 1em;
     border: 1px solid rgb(203, 203, 203);
     border-radius: 2em;
     font-size: 14px;
     color: rgb(102, 112, 124);
-    
+    cursor: pointer;
+    /* margin:10px; */
+    margin-bottom: 25px;
+    margin-left: 32px;
 }
-div.pen img{
-    width:15px;
+
+div.pen:hover {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #dadada;
+    padding: 7px 1em;
+    border: 1px solid #dadada;
+    border-radius: 2em;
+    font-size: 14px;
+    color: rgb(102, 112, 124);
+    cursor: pointer;
+    /* margin:10px; */
+    margin-bottom: 25px;
+    margin-left: 32px;
+}
+
+div.pen img {
+    width: 15px;
     position: relative;
-    top:2px;
-
+    top: 2.5px;
 }
 
-div.pen span{
+div.pen span {
     font-size: 14px;
     margin: 5px;
     font-weight: 600;
-    color:#282828;
+    color: #282828;
+    padding-left: 3px;
+    position: relative;
+    bottom: 1.5px;
 }
 
 /* --------------------card----- */
-div.comments_card{
+
+div.comments_card {
     overflow: hidden;
     height: 150px;
-    border: 1.5px solid rgb(203, 203, 203);
+    border: 1px solid rgb(203, 203, 203);
 }
+
 /* -------------------author-------------- */
-div.authorcontainer{
+
+div.authorcontainer {
     padding: 10px 15px;
     position: relative;
     width: 55%;
     margin: 0;
 }
-div.author{
+
+div.author {
     /* border: 1px solid black; */
     display: inline-block;
     position: relative;
 }
 
-div.author a.photo img{
-    width:40px;
+div.author a.photo img {
+    width: 40px;
     display: inline-block;
-    
 }
 
-div.name{
+div.name {
     font-weight: 600;
     /* border: 1px solid black; */
     display: inline-block;
     position: absolute;
     padding-top: 8px;
-
 }
 
-div.star{
+div.star {
     /* border: 1px solid black; */
     display: inline-block;
 }
 
-div.star img{
+div.star img {
     /* border: 1px solid black; */
     display: inline-block;
-    width:10px;
+    width: 10px;
 }
 
 /* ---------comment_content-------------------- */
 
-div.comment_content{
+@media screen and (max-width: 992px) {
+    div.comment, div.slick-track, .slick-slider .slick-track, .slick-slider .slick-list {
+        width: 100%;
+    }
+}
+
+div.comment_content {
     display: block;
     position: relative;
     width: 65%;
     margin: 0;
     font-size: 14px;
-    padding:5px 18px;
-    text-justify:inter-ideograph;
+    padding: 5px 18px;
+    text-justify: inter-ideograph;
     /* text-align: justify; */
-
-    
 }
 
-span.date{
+span.date {
     vertical-align: baseline;
     margin: 0;
 }
 
-
-
 /* -----------------userphoto--------------- */
 
-
-div.user_photo{
+div.user_photo {
     position: relative;
     font-size: 0;
     /* border: 1px solid black; */
 }
-div.user_photo img{
-    width:33%;
+
+div.user_photo img {
+    width: 33%;
     position: absolute;
-    right:0;
+    right: 0;
+}
+
+/* --------button------ */
+
+hr.button {
+    /* border: 1px solid #000; */
+    background-color: #000;
+    height: 1px;
+}
+
+div.button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+@media screen and (max-width: 1200px) {
+    div.button {
+        width: 100%;
+    }
+}
+
+div.pre, div.next, div.all {
+    font-size: 14px;
+    letter-spacing: 0.13em;
+    border: 1px solid #000;
+    padding: 15px 20px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+/* div.all{
+    width: 25%;
+} */
+
+div.all>a {
+    text-decoration: none;
+}
+
+div.all>a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    div.pre, div.next, div.all {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (min-width: 565px) and (max-width: 767px) {
+    div.pre, div.next, div.all {
+        margin: 0 20px;
+        font-size: 12px;
+    }
+
+    div.pre span,div.next span{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:564px) {
+    div.pre, div.next{
+        width: 40%;
+        padding: 0px;
+    }
+    div.pre span,div.next span{
+        font-size: 12px;
+        margin:0;
+    }
+}
+
+
+div.pre, div.next{
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.3s;
+    width: 20%;
+    padding: 10px 15px;
 
 }
 
 
-
-
-/* --------LIST------ */
-div.inspirations{
-    font-family: "Proxima Nova"; 
-    color:#282828;
-   background-color: #F2ECDF;
-}
-
-div.citylist{
-    margin:0 auto;
+ div.all {
+    display: inline-block;
     text-align: center;
-
-}
-
-div.city {
-   	max-width: 100%;
-	margin: 10px;
-	overflow: hidden;
-    width: 200px;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
-    display: inline-block;
+    transition-property: color;
+    transition-duration: 0.3s;
+    padding-top: 15px;
+
+}
+
+div.pre span,div.next span{
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    margin:20px 0;
+    font-weight: bold;
 }
 
 
-.cityphoto a img{
-    width: 100%;
-    border-radius: 5px;
+
+div.pre:before, div.next:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #282828;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
 }
 
-.cityphoto{
-    position: relative;
-    font-size: 0;
-    width: 200px;
-}
-.city h3{
-    margin: 0px;
+div.all>a:before, div.all:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #282828;
+    transform: scaleX(0);
+    transform-origin: 50% 50%;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
 }
 
-.cityname{
-	padding:15px;
-    width: 100%;
-    display: inline-block;
+div.all>a:hover, div.all>a:focus, div.all>a:active, div.pre:hover, div.pre:focus, div.pre:active, div.next:hover, div.next:focus, div.next:active {
+    color: white;
 }
 
+div.all>a:hover:before, div.all>a:focus:before, div.all>a:active:before, div.pre:hover:before, div.pre:focus:before, div.pre:active:before, div.next:hover:before, div.next:focus:before, div.next:active:before {
+    transform: scaleX(1);
+}

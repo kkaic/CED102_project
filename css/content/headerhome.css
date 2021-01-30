@@ -1,8 +1,8 @@
-.header{
+.header {
     margin: 0;
-  }
+}
 
-header.header{
+header.header {
     font-family: "Proxima Nova";
     width: 100%;
     margin: 0 auto;
@@ -10,91 +10,94 @@ header.header{
     font-size: 0;
 }
 
-@media (max-width: 767px){
-    header.header{
+@media (max-width: 767px) {
+    header.header {
         width: 100%;
-      }
     }
+}
 
-header.header a.logo_img{
+header.header a.logo_img {
     text-align: center;
     margin: 0 auto;
     position: relative;
 }
-header.header a.logo_img img{
-    height:60px;
+
+header.header a.logo_img img {
+    height: 60px;
     margin: 0 auto;
     text-align: center;
-    margin: 0 ;
+    margin: 0;
     /* position: absolute;
     z-index: 999; */
 }
+
 header.header .account_img {
     position: absolute;
     right: 0;
 }
-header.header .account_img img{
+
+header.header .account_img img {
     height: 18px;
-    top:100px;
+    top: 100px;
 }
 
-header.header nav.nav{
+header.header nav.nav {
     text-align: center;
-    /* border: 1px solid black; */   
+    /* border: 1px solid black; */
 }
 
-header.header nav.nav ul.link_list{
+header.header nav.nav ul.link_list {
     list-style: none;
     margin: 0 auto;
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items:center;
-    /* position: absolute;
-    z-index: 9999; */
+    align-items: center;
 }
-header.header nav.nav ul.link_list > li{
+
+header.header nav.nav ul.link_list>li {
     display: inline-block;
     text-align: center;
     padding-right: 5px;
     padding-left: 5px;
 }
-header.header nav.nav ul.link_list > li > a{
-    display: block;
-    /* vertical-align: bottom; */
+
+
+
+header.header nav.nav ul.link_list>li>a {
+    display: inline-block;
     font-size: 16px;
     text-decoration: none;
-    padding: 0px 10px;
+    padding: 5px 10px;
     min-width: 100px;
-    font-weight: 600;
-    color:#282828;
+    font-weight: 650;
+    color: #282828;
+    letter-spacing: 0.15em;
 }
 
-header.header a.logo_img{
+header.header a.logo_img {
     text-align: center;
     margin: 0 auto;
     position: relative;
     padding: 0;
 }
 
-header.header nav.nav ul.link_list > li > a:visited {
-    color:#282828;
+header.header nav.nav ul.link_list>li>a:visited {
+    color: #282828;
 }
-/* 
-header.header nav.nav ul.link_list > li > a:hover{
-    color: white;
-  } 
-   */
-header.header nav.nav ul.link_list > li div.city_block{
+
+header.header nav.nav ul.link_list>li div.city_block {
     font-size: 14px;
     position: relative;
     min-width: 100px;
     text-align: center;
 }
- header.header nav.nav ul.link_list > li div.city_block:hover ul.city_list{
+
+header.header nav.nav ul.link_list>li div.city_block:hover ul.city_list {
     display: block;
 }
-header.header nav.nav ul.link_list > li div.city_block ul.city_list{
+
+header.header nav.nav ul.link_list>li div.city_block ul.city_list {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -106,8 +109,8 @@ header.header nav.nav ul.link_list > li div.city_block ul.city_list{
     display: none;
     /* border: 1px solid black; */
 }
-  
-header.header nav.nav ul.link_list > li div.city_block ul.city_list > li a{
+
+header.header nav.nav ul.link_list>li div.city_block ul.city_list>li a {
     font-size: 14px;
     text-decoration: none;
     display: inline-block;
@@ -115,7 +118,8 @@ header.header nav.nav ul.link_list > li div.city_block ul.city_list > li a{
     padding: 10px 0;
     position: relative;
 }
-header.header nav.nav ul.link_list > li div.city_block ul.city_list > li a::after{
+
+header.header nav.nav ul.link_list>li div.city_block ul.city_list>li a::after {
     content: "";
     position: absolute;
     width: 80%;
@@ -125,9 +129,11 @@ header.header nav.nav ul.link_list > li div.city_block ul.city_list > li a::afte
     height: 1px;
     background-color: gray;
 }
-header.header nav.nav ul.link_list > li div.city_block ul.city_list > li:last-child a::after{
+
+header.header nav.nav ul.link_list>li div.city_block ul.city_list>li:last-child a::after {
     height: 0;
 }
-header.header nav.nav ul.link_list > li div.city_block ul.city_list > li a:visited {
-    color:#282828;
+
+header.header nav.nav ul.link_list>li div.city_block ul.city_list>li a:visited {
+    color: #282828;
 }

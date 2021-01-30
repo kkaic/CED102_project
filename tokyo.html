@@ -5,16 +5,19 @@
   <meta charset="utf-8">
   <title>TOKYO</title>
   <link rel="stylesheet" href="./css/tokyo.css">
+  <link rel="stylesheet" href="./vendors/aos/css/aos.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
 </head>
 
 <body>
   <!-- ------------------------------------------header------------------------------------------------------>
-  <header class="header">
+
+  <header class="header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+
     <a href="./index.html" class="logo_img"><img src="./image/normalheader-05.png"></a>
     <nav class="nav">
       <ul class="link_list">
-        <li><a href="#">ABOUT KISSA</a></li>
         <li><a href=".\city.html">CITIES</a>
           <div class="city_block">
             <ul class="city_list">
@@ -35,26 +38,36 @@
         </li>
         <li><a href="./discover.html">INSPIRATIONS</a></li>
         <li><a href="./topics.html">TOPICS</a></li>
-        
-        <li><a href="#" class="account_img"><img src="https://i.imgur.com/gwIgSon.png"></a></li>
+        <li><a href="#">ABOUT KISSA</a></li>
+        <li><a href="#" class="account_img"><img src="./image/icon/round-account-button-with-user-inside.png"></a></li>
       </ul>
+      <div class="burger">
+        <!-- <input type="checkbox" class="checkbox"> -->
+        <div class="span-container">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+      </div>
     </nav>
 
+
   </header>
-  <!-- ------------------------------------------nav-------------------------------------------------------->
-  <div class="breadcrumb">
-    <ol class="breadcrumb_list">
-      <li><a href="./index.html">HOME</a></li>
-      <li><a href="./city.html">CITIES</a></li>
-      <li>TOKYO</li>
-    </ol>
+  <div class="nav-container">
+    <a href="./city.html">CITIES</a>
+    <a href="./discover.html">INSPIRATIONS</a>
+    <a href="./topics.html">TOPICS</a>
+    <a href="#">ABOUT KISSA</a>
   </div>
+
   <!-- ------------------------------------------main ------------------------------------------------------->
   <div class="tokyobox">
-    <div class="city_topics">TOKYO
-      <hr class="user_title">
+    <div class="city_topics" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="800">TOKYO
+      <!-- <hr class="user_title"> -->
     </div>
-    <div class="tokyobanner"><img src="./image/tokyo_list/ia_0667_tokyo_miwa-goto-1.jpg"></div>
+    <div class="tokyobanner" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="800"><img
+        src="./image/tokyo_list/ia_0667_tokyo_miwa-goto-1.jpg"></div>
     <div class="area">Area Of Tokyo</div>
     <div class="areatag_listall">
       <ul class="areatag_all">
@@ -68,15 +81,20 @@
         <li><a href="#">Asakusa</a></li>
         <li><a href="#">Meguro</a></li>
         <li><a href="#">Harajuku</a></li>
-        <li><a href="#">Aoyama</a></li>
-        <li><a href="#">Jimbocho</a></li>
-        <li><a href="#">Kanda</a></li>
-        <li><a href="#">Tsukiji</a></li>
+        <li class="hide1"><a href="#">Aoyama</a></li>
+        <li class="hide1"><a href="#">Jimbocho</a></li>
+        <li class="hide1"><a href="#">Kanda</a></li>
+        <li class="hide1"><a href="#">Tsukiji</a></li>
+        <li class="hide"><a href="#">Shinagawa</a></li>
+        <li class="hide"><a href="#">Suginami</a></li>
+        <li class="hide"><a href="#">Sumida</a></li>
+        <li class="hide"><a href="#">Toshima</a></li>
+        <li class="hide"><a href="#">Nerima</a></li>
       </ul>
-      <div class="show"><a href="#">Show More</a></div>
+      <div class="show"><u>Show More</u></div>
     </div>
-    <!-- ----------------------list part------------------------------     -->
-    <div class="cafe_all">
+    <!-- ------------------------------------------cafe list------------------------------------------------------->
+    <div class="cafe_all" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800">
       <!-- ---------------------------------1------------------------------------------- -->
       <div class="cafe">
 
@@ -96,9 +114,9 @@
             <img src=".\image\icon\shop.png">Founded in 1980
           </div> -->
           <div class="user">
-            <a href="#" class="anne"><img src="https://i.imgur.com/MGIslIg.png"></a>
-            <a href="#" class="donn"><img src="https://i.imgur.com/w9Vpl4y.png"></a>
-            <a href="#" class="sicong"><img src="https://i.imgur.com/nJGilSi.png"></a>
+            <a href="#" class="anne"><img src="./image/user_profile/anne-ROUND.png"></a>
+            <a href="#" class="donn"><img src="./image/user_profile/donn-round.png"></a>
+            <a href="#" class="sicong"><img src="./image/user_profile/sicong-round.png"></a>
             <span class="ossme">223 people liked</span>
             <img class="heart" src="./image/icon/heart.png">
           </div>
@@ -123,9 +141,9 @@
             <img src=".\image\icon\shop.png">Founded in 1979
           </div> -->
           <div class="user">
-            <a href="#" class="anne"><img src="https://i.imgur.com/MGIslIg.png"></a>
-            <a href="#" class="donn"><img src="https://i.imgur.com/w9Vpl4y.png"></a>
-            <a href="#" class="sicong"><img src="https://i.imgur.com/nJGilSi.png"></a>
+            <a href="#" class="anne"><img src="./image/user_profile/anne-ROUND.png"></a>
+            <a href="#" class="donn"><img src="./image/user_profile/donn-round.png"></a>
+            <a href="#" class="sicong"><img src="./image/user_profile/sicong-round.png"></a>
             <span class="ossme">212 people liked</span>
             <img class="heart" src="./image/icon/heart.png">
 
@@ -150,9 +168,9 @@
             <img src=".\image\icon\shop.png">Founded in 1954
           </div> -->
           <div class="user">
-            <a href="#" class="anne"><img src="https://i.imgur.com/MGIslIg.png"></a>
-            <a href="#" class="donn"><img src="https://i.imgur.com/w9Vpl4y.png"></a>
-            <a href="#" class="sicong"><img src="https://i.imgur.com/nJGilSi.png"></a>
+            <a href="#" class="anne"><img src="./image/user_profile/anne-ROUND.png"></a>
+            <a href="#" class="donn"><img src="./image/user_profile/donn-round.png"></a>
+            <a href="#" class="sicong"><img src="./image/user_profile/sicong-round.png"></a>
             <span class="ossme">197 people liked</span>
             <img class="heart" src="./image/icon/heart.png">
           </div>
@@ -177,9 +195,9 @@
             <img src=".\image\icon\shop.png">Founded in 1964
           </div> -->
           <div class="user">
-            <a href="#" class="anne"><img src="https://i.imgur.com/MGIslIg.png"></a>
-            <a href="#" class="donn"><img src="https://i.imgur.com/w9Vpl4y.png"></a>
-            <a href="#" class="sicong"><img src="https://i.imgur.com/nJGilSi.png"></a>
+            <a href="#" class="anne"><img src="./image/user_profile/anne-ROUND.png"></a>
+            <a href="#" class="donn"><img src="./image/user_profile/donn-round.png"></a>
+            <a href="#" class="sicong"><img src="./image/user_profile/sicong-round.png"></a>
             <span class="ossme">185 people liked</span>
             <img class="heart" src="./image/icon/heart.png">
           </div>
@@ -204,9 +222,9 @@
             <img src=".\image\icon\shop.png">Founded in 1950
           </div> -->
           <div class="user">
-            <a href="#" class="anne"><img src="https://i.imgur.com/MGIslIg.png"></a>
-            <a href="#" class="donn"><img src="https://i.imgur.com/w9Vpl4y.png"></a>
-            <a href="#" class="sicong"><img src="https://i.imgur.com/nJGilSi.png"></a>
+            <a href="#" class="anne"><img src="./image/user_profile/anne-ROUND.png"></a>
+            <a href="#" class="donn"><img src="./image/user_profile/donn-round.png"></a>
+            <a href="#" class="sicong"><img src="./image/user_profile/sicong-round.png"></a>
             <span class="ossme">145 people liked</span>
             <img class="heart" src="./image/icon/heart.png">
           </div>
@@ -231,9 +249,9 @@
             <img src=".\image\icon\shop.png">Founded in 1950
           </div> -->
           <div class="user">
-            <a href="#" class="anne"><img src="https://i.imgur.com/MGIslIg.png"></a>
-            <a href="#" class="donn"><img src="https://i.imgur.com/w9Vpl4y.png"></a>
-            <a href="#" class="sicong"><img src="https://i.imgur.com/nJGilSi.png"></a>
+            <a href="#" class="anne"><img src="./image/user_profile/anne-ROUND.png"></a>
+            <a href="#" class="donn"><img src="./image/user_profile/donn-round.png"></a>
+            <a href="#" class="sicong"><img src="./image/user_profile/sicong-round.png"></a>
             <span class="ossme">223 people liked</span>
             <img class="heart" src="./image/icon/heart.png">
           </div>
@@ -258,9 +276,9 @@
             <img src=".\image\icon\shop.png">Founded in 1966
           </div> -->
           <div class="user">
-            <a href="#" class="anne"><img src="https://i.imgur.com/MGIslIg.png"></a>
-            <a href="#" class="donn"><img src="https://i.imgur.com/w9Vpl4y.png"></a>
-            <a href="#" class="sicong"><img src="https://i.imgur.com/nJGilSi.png"></a>
+            <a href="#" class="anne"><img src="./image/user_profile/anne-ROUND.png"></a>
+            <a href="#" class="donn"><img src="./image/user_profile/donn-round.png"></a>
+            <a href="#" class="sicong"><img src="./image/user_profile/sicong-round.png"></a>
             <span class="ossme">142 people liked</span>
             <img class="heart" src="./image/icon/heart.png">
           </div>
@@ -285,9 +303,9 @@
             <img src=".\image\icon\shop.png">Founded in 1967
           </div> -->
           <div class="user">
-            <a href="#" class="anne"><img src="https://i.imgur.com/MGIslIg.png"></a>
-            <a href="#" class="donn"><img src="https://i.imgur.com/w9Vpl4y.png"></a>
-            <a href="#" class="sicong"><img src="https://i.imgur.com/nJGilSi.png"></a>
+            <a href="#" class="anne"><img src="./image/user_profile/anne-ROUND.png"></a>
+            <a href="#" class="donn"><img src="./image/user_profile/donn-round.png"></a>
+            <a href="#" class="sicong"><img src="./image/user_profile/sicong-round.png"></a>
             <span class="ossme">122 people liked</span>
             <img class="heart" src="./image/icon/heart.png">
           </div>
@@ -312,20 +330,21 @@
             <img src=".\image\icon\shop.png">Founded in 1989
           </div> -->
           <div class="user">
-            <a href="#" class="anne"><img src="https://i.imgur.com/MGIslIg.png"></a>
-            <a href="#" class="donn"><img src="https://i.imgur.com/w9Vpl4y.png"></a>
-            <a href="#" class="sicong"><img src="https://i.imgur.com/nJGilSi.png"></a>
+            <a href="#" class="anne"><img src="./image/user_profile/anne-ROUND.png"></a>
+            <a href="#" class="donn"><img src="./image/user_profile/donn-round.png"></a>
+            <a href="#" class="sicong"><img src="./image/user_profile/sicong-round.png"></a>
             <span class="ossme">67 people liked</span>
             <img class="heart" src="./image/icon/heart.png">
           </div>
         </div>
       </div>
 
-      
+
     </div>
-    <a href="#" class="seemoreuser">Laod More </a>
+    <div class="more" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"><a href="#"
+        class="seemoreuser">Load More </a></div>
   </div>
-  
+
   <!-- ------------------------------------------footer------------------------------------------------------->
   <footer class="footer">
     <div class="info">
@@ -342,10 +361,33 @@
         <li><a href="#">HELP</a></li>
       </ul>
     </div>
-    
+
     &copy; 2020 KISSA Ltd. All Rights Reserved.
   </footer>
 
+
+
+  <script>
+
+
+  </script>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./vendors/aos/js/aos.js"></script>
+  <script>
+    AOS.init();
+
+    $('div.span-container').on("click", function () {
+      $('.nav-container').toggleClass("on")
+    });
+
+    $('div.span-container').on("click", function(){
+      $('.nav-container').toggleClass("on")
+    });
+
+  </script>
 </body>
 
 </html>

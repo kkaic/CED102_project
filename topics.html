@@ -3,19 +3,22 @@
 
 <head>
   <meta charset="utf-8">
-  <title>KISSA.</title>
+  <title>TOPICS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <link rel="stylesheet" href="./vendors/aos/css/aos.css">
+
   <link rel="stylesheet" href="./css/topics.css">
 </head>
 
 <body>
 
   <!-- ------------------------------------------header------------------------------------------------------>
-  <header class="header">
+ 
+  <header class="header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+     
     <a href="./index.html" class="logo_img"><img src="./image/normalheader-05.png"></a>
     <nav class="nav">
       <ul class="link_list">
-        <li><a href="#">ABOUT KISSA</a></li>
         <li><a href=".\city.html">CITIES</a>
           <div class="city_block">
             <ul class="city_list">
@@ -36,27 +39,45 @@
         </li>
         <li><a href="./discover.html">INSPIRATIONS</a></li>
         <li><a href="./topics.html">TOPICS</a></li>
-        
-        <li><a href="#" class="account_img"><img src="./image/icon/user.png"></a></li>
+        <li><a href="#">ABOUT KISSA</a></li>
+        <li><a href="#" class="account_img"><img src="./image/icon/round-account-button-with-user-inside.png"></a></li>
       </ul>
+      <div class="burger">
+        <!-- <input type="checkbox" class="checkbox"> -->
+        <div class="span-container">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+      </div>
     </nav>
+    
 
   </header>
+  <div class="nav-container">
+    <a href="./city.html">CITIES</a>
+    <a href="./discover.html">INSPIRATIONS</a>
+    <a href="./topics.html">TOPICS</a>
+    <a href="#">ABOUT KISSA</a>
+  </div>
 
   <!-- ------------------------------------------topics------------------------------------------------------>
 
   <div class="main">
-    <div class=citytopics>TOPICS
-      <!-- <hr class="user_title"> -->
-      <span class="dis">Top stories on what makes traditional cultures special and unique.</span>
+    <div class="citytopics" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900"
+    data-aos-anchor-placement="center-bottom">TOPICS
+      <span class="dis">Immerse yourself in the city's lifestyle.</span>
     </div>
    
 
-  <!-- ------------------------------------------nav-------------------------------------------------------- -->
+  <!-- -------------------------------------------nav-------------------------------------------------------- -->
 
     <nav class="topicstype">
-      <div class="category">Category</div>
-      <ul class="topics_list">
+      <div class="category" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="950"
+      data-aos-anchor-placement="center-bottom">Category</div>
+      <ul class="topics_list" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="980"
+      data-aos-anchor-placement="center-bottom">
         <li><a href="./topics.html">Top</a></li>
         <li><a href="#">Culture</a></li>
         <li><a href="#">Art</a></li>
@@ -66,7 +87,8 @@
     </nav>
     <!-- ------------------------------------------main-------------------------------------------------------- -->
 
-    <div class="article_all_div">
+    <div class="article_all_div" class="topics_list" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000"
+    >
       <div class="feature2">Popular
         <hr class="user_title">
       </div>
@@ -195,8 +217,6 @@
 
   </div>
 
-
-
   <!-- ------------------------------------------footer-------------------------------------------------------- -->
   <footer class="footer">
     <div class="info">
@@ -216,6 +236,19 @@
     <!-- <br> -->
     &copy; 2020 KISSA Ltd. All Rights Reserved.
   </footer>
+
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./vendors/aos/js/aos.js"></script>
+  <script>
+    AOS.init();
+
+    $('div.span-container').on("click", function(){
+      $('.nav-container').toggleClass("on")
+    });
+  </script>
 </body>
+
 
 </html>

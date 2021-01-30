@@ -24,6 +24,7 @@ div.citytopics {
     margin-top: 20px;
     margin-bottom: 50px;
     color: #121416;
+    padding-left: 45px;
 }
 
 @media screen and (min-width:768px) and (max-width: 1200px) {
@@ -46,8 +47,9 @@ span.dis {
     font-size: 18px;
     color: #121416;
     font-weight: 600;
-    letter-spacing:0.5px;
-    padding: 15px 0;;
+    letter-spacing: 0.5px;
+    padding: 15px 0;
+    ;
 }
 
 @media screen and (max-width: 1200px) {
@@ -55,8 +57,6 @@ span.dis {
         font-size: 16px;
     }
 }
-
-
 
 div.feature2 {
     font-size: 28px;
@@ -67,9 +67,6 @@ div.feature2 {
     text-align: center;
     letter-spacing: 0.08em;
 }
-
-
-
 
 div.article_all_div {
     margin-bottom: 50px;
@@ -89,26 +86,23 @@ div.article_card {
 }
 
 @media screen and (max-width: 575px) {
-    div.article_card {
+    /* div.article_card {
         width: 400px;
-    }
-    div.feature{
+    } */
+    div.feature {
         font-size: 22px;
     }
-
-    div.feature2{
+    div.feature2 {
         font-size: 22px;
     }
     span.dis {
         font-size: 14px;
     }
-
     div.article_card a.card_link {
         display: block;
         height: 230px;
         position: relative;
     }
-
     div.article_card img {
         opacity: 0.95;
         border-radius: 3px;
@@ -120,25 +114,34 @@ div.article_card {
         width: auto !important;
         /* min-width:100%; */
     }
-
 }
 
-@media screen and (min-width:576px) and (max-width: 767px) {
-    div.article_card {
+@media screen and (max-width: 767px) {
+    div.article_card, div.article_card img {
         width: 90%;
     }
-}
-
-/* @media (max-width: 768px) {
-    div.article_card {
-        width: 600px;
+    div.article_card img:hover {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1.1);
+        transition-duration: 0.8s;
     }
-} */
+}
 
 div.article_card img {
     width: 100%;
     opacity: 0.95;
     border-radius: 5px;
+}
+
+div.article_card img:hover {
+    width: 100%;
+    opacity: 0.95;
+    border-radius: 5px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1.1);
+    transition-duration: 0.8s;
 }
 
 div.article_card div.article_all {
@@ -167,7 +170,7 @@ span.article_category {
     letter-spacing: 1.5px;
     font-weight: 500;
     top: 0;
-    border-radius: 0  3px 3px 0;
+    border-radius: 0 3px 3px 0;
 }
 
 div.article_title {
@@ -175,7 +178,6 @@ div.article_title {
     font-size: 18px;
     width: 100%;
     padding-right: 3px;
-    
     border-radius: 5px;
     bottom: 0;
     letter-spacing: 0.5px;
@@ -197,17 +199,21 @@ div.latest_card {
     overflow: hidden;
     position: relative;
     margin-bottom: 50px;
-    /* background-color: #f2f2f2; */
     display: inline-block;
     margin: 20px;
-    /* box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1); */
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+div.latest_card:hover {
+    transform: perspective(2px) translateX(-1.5px) translateY(-1.5px);
+    transition-duration: 0.1s;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 575px) {
     div.latest_card {
-        width: 400px;
-        height: 350px;
+        width: 90%;
+        height: 380px;
     }
 }
 
@@ -225,6 +231,7 @@ div.latest_all {
     text-align: left;
     /* margin: 10px; */
     padding: 20px;
+    padding-top: 15px;
 }
 
 span.latest_category {
@@ -269,7 +276,7 @@ a.seemoreuser {
     justify-content: center;
     height: 2.875rem;
     border: 0px none;
-    border-radius: 5px;
+    border-radius: 2em;
     font-size: 18px;
     color: rgb(255, 255, 255);
     padding: 0 80px;
@@ -277,6 +284,7 @@ a.seemoreuser {
     text-align: center;
     margin-bottom: 120px;
     margin-top: 40px;
+    letter-spacing: 1px;
 }
 
 @media screen and (max-width: 767px) {
@@ -289,4 +297,10 @@ a.seemoreuser {
 button.seemoreuser:visited {
     text-decoration: none;
     color: rgb(255, 255, 255);
+}
+
+a.seemoreuser:hover {
+    background: #365B56;
+    transition-duration: 0.3s;
+    transform: perspective(1px) translateZ(0);
 }

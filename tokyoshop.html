@@ -3,72 +3,77 @@
 
 <head>
     <meta charset="utf-8">
-    <title>TOKYO Cafe</title>
+    <title>Café Trois Chambres</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <link rel="stylesheet" href="./css/tokyoshop.css">
+    <link rel="stylesheet" href="./vendors/aos/css/aos.css">
+
 
     <link rel="stylesheet" type="text/css" href="./slickall/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="./slickall/slick/slick-theme.css" />
 </head>
 
 <body>
-    <!-- ------------------------------------------header------------------------------------------------------>
-    <header class="header">
-        <a href="./index.html" class="logo_img"><img src="./image/normalheader-05.png"></a>
-        <nav class="nav">
-            <ul class="link_list">
-                <li><a href="#">ABOUT KISSA</a></li>
-                <li><a href=".\city.html">CITIES</a>
-                    <div class="city_block">
-                        <ul class="city_list">
-                            <li>
-                                <a href="#">TOKYO</a>
-                            </li>
-                            <li>
-                                <a href="#">OSAKA</a>
-                            </li>
-                            <li>
-                                <a href="#">KOBE</a>
-                            </li>
-                            <li>
-                                <a href="#">NAGOYA</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="./discover.html">INSPIRATIONS</a></li>
-                <li><a href="./topics.html">TOPICS</a></li>
-
-                <li><a href="#" class="account_img"><img src="https://i.imgur.com/gwIgSon.png"></a></li>
+  <!-- ------------------------------------------header------------------------------------------------------>
+ 
+  <header class="header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+     
+    <a href="./index.html" class="logo_img"><img src="./image/normalheader-05.png"></a>
+    <nav class="nav">
+      <ul class="link_list">
+        <li><a href=".\city.html">CITIES</a>
+          <div class="city_block">
+            <ul class="city_list">
+              <li>
+                <a href="#">TOKYO</a>
+              </li>
+              <li>
+                <a href="#">OSAKA</a>
+              </li>
+              <li>
+                <a href="#">KOBE</a>
+              </li>
+              <li>
+                <a href="#">NAGOYA</a>
+              </li>
             </ul>
-        </nav>
-
-    </header>
-
-    <!-- ------------------------------------------nav-------------------------------------------------------- -->
-
-    <div class="breadcrumb">
-        <ol class="breadcrumb_list">
-            <li><a href="./index.html">HOME</a></li>
-            <li><a href="./city.html">CITIES</a></li>
-            <li><a href="./tokyo.html">TOKYO</a></li>
-            <li>Café Trois Chambres</li>
-        </ol>
-    </div>
-
-    <!-- ------------------------------------------main-------------------------------------------------------- -->
-    <div class="cafe_info_all">
-        <div class="city_topics">Café Trois Chambres<img src="./image/icon/heart.png"><span> 223 liked</span></div>
-        <!-- <div class="user">
-            <a href="#" class="anne"><img src="https://i.imgur.com/MGIslIg.png"></a>
-            <a href="#" class="donn"><img src="https://i.imgur.com/w9Vpl4y.png"></a>
-            <a href="#" class="sicong"><img src="https://i.imgur.com/nJGilSi.png"></a>
-            <span class="ossme">223 people liked here</span>
-        </div> -->
-        <div class="location">
-            <img src=".\image\icon\pin.png"><span>Setagaya City</span>
-
+          </div>
+        </li>
+        <li><a href="./discover.html">INSPIRATIONS</a></li>
+        <li><a href="./topics.html">TOPICS</a></li>
+        <li><a href="#">ABOUT KISSA</a></li>
+        <li><a href="#" class="account_img"><img src="./image/icon/round-account-button-with-user-inside.png"></a></li>
+      </ul>
+      <div class="burger">
+        <!-- <input type="checkbox" class="checkbox"> -->
+        <div class="span-container">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        
+      </div>
+    </nav>
+    
+
+  </header>
+  <div class="nav-container">
+    <a href="./city.html">CITIES</a>
+    <a href="./discover.html">INSPIRATIONS</a>
+    <a href="./topics.html">TOPICS</a>
+    <a href="#">ABOUT KISSA</a>
+  </div>
+    <!-- ------------------------------------------main-------------------------------------------------------- -->
+    <div class="cafe_info_all" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="800">
+        <div class="type">
+            <a href="./tokyo.html"> TOKYO</a>
+            <a href="#">SETAGAYA</a>
+        </div>
+        <div class="city_topics">Café Trois Chambres<span class="like"> <img src="./image/icon/heart.png">223
+                liked</span></div>
+        <!-- <div class="location">
+            <img src=".\image\icon\pin.png"><span>Setagaya City</span>
+        </div> -->
         <div class="photoall">
             <div class="city_list_photo">
                 <img src="./image/tokyo_list/chamr1.png" alt="">
@@ -83,49 +88,54 @@
                 <img src="./image/tokyo_list/chamr4.png" alt="">
             </div>
         </div>
-
-        <div class="intro">
-            <div class="icon">
-                <div class="topics_social1"><span>SHARE</span>
-                    <a href="#" class="topics_fb"><img src="./image/icon/facebook-logo.png"></a>
-                    <a href="#" class="topics_twitter"><img src="./image/icon/twitter-logo-on-black-background.png"></a>
-                    <a href="#" class="topics_email"><img src="./image/icon/black-envelope-email-symbol.png"></a>
+        <div class="mid">
+            <div class="intro">
+                <div class="icon">
+                    <div class="topics_social1"><span>SHARE</span>
+                        <a href="#" class="topics_fb"><img src="./image/icon/facebook-logo.png"></a>
+                        <a href="#" class="topics_twitter"><img
+                                src="./image/icon/twitter-logo-on-black-background.png"></a>
+                        <a href="#" class="topics_email"><img src="./image/icon/black-envelope-email-symbol.png"></a>
+                    </div>
+                </div>
+                <div class="para">
+                    <p> Opened in 1980, Trois Chambres feels a world away from the busy streets of Shimokitazawa.
+                        Antique
+                        cups line the shelves, regulars strike up conversation over the counter and the corner tables
+                        are
+                        practically always occupied by someone reading a book – time truly appears to stand still at
+                        this
+                        kissaten, which might even feel a little intimidating for first-timers. But fear not: the fellow
+                        running the show here is friendly and subtle, the cheesecakes (both rare and baked) are heavenly
+                        and
+                        ¥250 gets you coffee with a free refill. With Shimokitazawa increasingly falling victim to
+                        commercialisation and chain cafés, Trois Chambres swims against the current with its unchanging
+                        dedication to tradition – and great joe.
+                    </p>
                 </div>
             </div>
-            <div class="para">
-                <p> Opened in 1980, Trois Chambres feels a world away from the busy streets of Shimokitazawa. Antique
-                    cups line the shelves, regulars strike up conversation over the counter and the corner tables are
-                    practically always occupied by someone reading a book – time truly appears to stand still at this
-                    kissaten, which might even feel a little intimidating for first-timers. But fear not: the fellow
-                    running the show here is friendly and subtle, the cheesecakes (both rare and baked) are heavenly and
-                    ¥250 gets you coffee with a free refill. With Shimokitazawa increasingly falling victim to
-                    commercialisation and chain cafés, Trois Chambres swims against the current with its unchanging
-                    dedication to tradition – and great joe.
-                </p>
-            </div>
-        </div>
 
-        <div class="cafeinfo">
-            <h3>INFORMATION
-                <hr class="user_title">
-            </h3>
-            <span class="item">Address</span><br>
-            <span class="item_content">Yuasa Bldg 2F, 5-36-14 Daizawa, Setagaya-ku</span><br>
-            <span class="item">Transport</span><br>
-            <span class="item_content">Shimokitazawa Station<br>
-                (Keio Inokashira, Odakyu lines)</span><br>
-            <span class="item">Contact</span><br>
-            <span class="item_content">03-123455678</span><br>
-            <span class="item">Opening hours</span><br>
-            <span class="item_content">9.30am-11pm daily</span>
-            <br>
-            <div class="add">
-                <img src=".\image\icon\bookmark.png">
-                <!-- <span>Add to list</span> --><span>Add To List</span>
+            <div class="cafeinfo">
+                <h3>Information
+                    <hr class="user_title">
+                </h3>
+                <span class="item">Address</span><br>
+                <span class="item_content">Yuasa Bldg 2F, 5-36-14 Daizawa, Setagaya-ku</span><br>
+                <span class="item">Transport</span><br>
+                <span class="item_content">Shimokitazawa Station<br>
+                    (Keio Inokashira, Odakyu lines)</span><br>
+                <span class="item">Contact</span><br>
+                <span class="item_content">03-123455678</span><br>
+                <span class="item">Opening hours</span><br>
+                <span class="item_content">9.30am-11pm daily</span>
+                <br>
+                <div class="add">
+                    <img src=".\image\icon\bookmark.png">
+                    <!-- <span>Add to list</span> --><span>Add To List</span>
+                </div>
             </div>
-        </div>
 
-        <hr class="sep">
+        </div>
         <!-- ------------------------------------comment------------------- -->
 
         <div class="comment">
@@ -231,7 +241,8 @@
 
                     <div class="authorcontainer">
                         <div class="author">
-                            <a href="#" class="photo"><img src="./image/user_profile/sergio-de-paula-c_GmwfHBDzk-unsplash-ROUND.png"></a>
+                            <a href="#" class="photo"><img
+                                    src="./image/user_profile/sergio-de-paula-c_GmwfHBDzk-unsplash-ROUND.png"></a>
                         </div>
                         <div class="name">Celeste Mills
                         </div>
@@ -251,9 +262,16 @@
             </div>
 
         </div>
+        <hr class="button">
+        <div class="button">
+            <div class="pre">PREV<br><span>Shiratori Cafe</span></div>
+            <div class="all"><a href="./tokyo.html">VIEW ALL</a></div>
+
+            <div class="next">NEXT<br><span>Café Sky</span></div>
+        </div>
 
     </div>
-    <hr class="sep">
+
 
     <!-- ------------------------------------------footer-------------------------------------------------------- -->
     <footer class="footer">
@@ -284,17 +302,53 @@
             infinite: true,
             speed: 100,
             slidesToShow: 1,
-            adaptiveHeight: true
+            adaptiveHeight: true,
+            arrows: false,
+
         });
 
 
         $('.comments_container').slick({
-            slidesToShow: 2,
-            slidesToScroll: 2,
+            slidesToShow: 1.8,
+            slidesToScroll: 1,
             autoplay: false,
-            autoplaySpeed: 500,
+            responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 1.5,
+                    slidesToScroll: 1,
+                }
+            },
+            // {
+            //     breakpoint: 992,
+            //     settings: {
+            //         slidesToShow: 1.1,
+            //         slidesToScroll: 1,
+            //     }
+            // },
+
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1.05,
+                    slidesToScroll: 1,
+                }
+            },
+
+            ]
         });
 
+
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./vendors/aos/js/aos.js"></script>
+    <script>
+        AOS.init();
+
+        $('div.span-container').on("click", function(){
+      $('.nav-container').toggleClass("on")
+    });
 
     </script>
 
