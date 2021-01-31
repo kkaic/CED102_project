@@ -93,6 +93,7 @@ div.areatag_listall ul.areatag_all>li>a {
     font-size: 14px;
     text-decoration: none;
     padding: 5px 10px;
+    color: rgb(102, 112, 124);
 }
 
 div.areatag_listall ul.areatag_all>li>a:visited {
