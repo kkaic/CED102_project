@@ -4,14 +4,14 @@ body {
 
 header.header {
     font-family: "Proxima Nova";
-    width: 1200px;
+    width: 1500px;
     margin: 0 auto;
     font-size: 0;
     position: relative;
     z-index:100;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1500px) {
     header.header {
         width: 100%;
     }
@@ -23,7 +23,7 @@ header.header a.logo_img {
 }
 
 header.header a.logo_img img {
-    height: 70px;
+    height: 75px;
 }
 
 header.header a.account_img img {
@@ -36,7 +36,7 @@ header.header nav.nav {
     float: right;
     padding: 10px;
     position: relative;
-    top: 5px;
+    top: 7px;
 }
 
 header.header nav.nav ul.link_list {
@@ -68,67 +68,18 @@ header.header nav.nav ul.link_list>li>a {
     font-weight: 650;
     color: #282828;
     letter-spacing: 0.15em;
+    top: 3px;
 }
 
 header.header nav.nav ul.link_list>li>a:visited {
     color: #282828;
 }
 
-/* header.header nav.nav ul.link_list > li > a:hover{
-    color: white;
-  } */
+header.header nav.nav ul.link_list>li>a:hover {
+  color: #666C70;
+  
+  }
 
-header.header nav.nav ul.link_list>li div.city_block {
-    font-size: 14px;
-    position: relative;
-    min-width: 100px;
-    text-align: center;
-}
-
-header.header nav.nav ul.link_list>li div.city_block:hover ul.city_list {
-    display: block;
-}
-
-header.header nav.nav ul.link_list>li div.city_block ul.city_list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: absolute;
-    right: 0;
-    top: 10px;
-    background-color: white;
-    min-width: 100%;
-    display: none;
-    /* border: 1px solid black; */
-}
-
-header.header nav.nav ul.link_list>li div.city_block ul.city_list>li a {
-    font-size: 14px;
-    text-decoration: none;
-    display: inline-block;
-    width: 100%;
-    padding: 10px 0;
-    position: relative;
-}
-
-header.header nav.nav ul.link_list>li div.city_block ul.city_list>li a::after {
-    content: "";
-    position: absolute;
-    width: 80%;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-    height: 1px;
-    background-color: gray;
-}
-
-header.header nav.nav ul.link_list>li div.city_block ul.city_list>li:last-child a::after {
-    height: 0;
-}
-
-header.header nav.nav ul.link_list>li div.city_block ul.city_list>li a:visited {
-    color: #282828;
-}
 
 
 /* ---------------------漢堡----------------------- */
@@ -136,6 +87,7 @@ header.header nav.nav ul.link_list>li div.city_block ul.city_list>li a:visited {
   /* //  --------BURGER MENU CODE :D  */
   
   .burger {
+    font-family: "Proxima Nova";
     width: 100%;
     height: 0;
     display: flex;
@@ -144,7 +96,6 @@ header.header nav.nav ul.link_list>li div.city_block ul.city_list>li a:visited {
     align-items: center;
     /* padding: 2rem; */
     position: relative;
-    font-size: 0;
 
   }
 
@@ -162,7 +113,7 @@ header.header nav.nav ul.link_list>li div.city_block ul.city_list>li a:visited {
     width: 35px;
     height: 35px;
     position: absolute;
-    right: 2rem;
+    right: 20px;
     top: 20px;
     transform: translateY(-50%);
   }
@@ -219,6 +170,7 @@ header.header nav.nav ul.link_list>li div.city_block ul.city_list>li a:visited {
   
   /* //style our navigation for full screen when checkbox:checked. */
   .nav-container{
+    font-family: "Proxima Nova";
     position: fixed;
     left: 0;
     top: 0;
@@ -229,7 +181,7 @@ header.header nav.nav ul.link_list>li div.city_block ul.city_list>li a:visited {
     justify-content: center;
     align-items: center;
     z-index: 50;
-    background: #365B56;
+    background: #426e69;
     transition: all 250ms ease-out;
     /* //translate(-100%, 0%) basically hides the entire navigation to the left by 100%. [invisible.]
     //This is great as all we do when we checkbox:checked is change these values to 0%, 0% and it will
@@ -298,4 +250,3 @@ header.header nav.nav ul.link_list>li div.city_block ul.city_list>li a:visited {
   .nav-container>a {
         margin-right: 1.5rem;
       }
-  

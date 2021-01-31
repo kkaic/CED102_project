@@ -1,16 +1,14 @@
 @import "./content/all.css";
-/* @import "./content/header.css"; */
-
 @import "./content/footer.css";
 @import "./content/headerhomenew.css";
 div.half {
-    background: linear-gradient(to left, #365B56 0%, #365B56 55%, white 55%, white 100%);
     padding-bottom: 40px;
     background-image: url("../image/home/homeback-01-01.png");
     background-repeat: no-repeat;
+    width:100%;
 }
 
-@media screen and (max-width: 79px) {
+@media screen and (max-width: 796px) {
     div.half {
         background: none;
         padding-bottom: 0px;
@@ -28,7 +26,8 @@ main.one {
     overflow: hidden;
     margin-top: 50px;
     margin-bottom: 200px;
-    margin-left: 380px;
+    margin-left: 420px;
+    width: 75%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -39,103 +38,47 @@ main.one {
 }
 
 div.kissa {
-    font-size: 46px;
-    top: 230px;
-    color: #282828;
-    font-weight: 700;
-    left: 185px;
-    letter-spacing: 0.09em;
+    font-size: 54px;
+    top: 200px;
+    color: #1d1d1d;
+    font-weight:800;
+    left: 150px;
+    letter-spacing: 0.08em;
     z-index: 1;
     position: absolute;
-    padding: 15px;
+    padding: 13px;
     border: 8px solid #282828;
     text-align: left;
-    /* background-color: #c75656; */
-    /* background-color:#FBD431; */
 }
 
 @media screen and (max-width: 575px) {
     div.kissa {
-        font-size: 28px;
+        font-size: 26px;
         color: #fafafa;
-        font-weight: 700;
-        letter-spacing: 0.09em;
-        z-index: 1;
-        position: absolute;
-        padding: 15px;
-        border: 8px solid #fafafa;
-        text-align: center;
-        margin: 0 auto;
-        left: 10px;
-        top: 180px;
-        vertical-align: middle;
-        background: linear-gradient(90deg, rgba(0, 0, 26, 0.5)60%, rgba(0, 0, 0, 0)100%);
-        /* background-color: #c75656; */
+        border: 5px solid #fafafa;
+        left: 25%;
+        top: 13%;
+        background-color:rgba(54, 91, 86, 0.1);
     }
-    main.one {
-        margin: 0 auto;
-        margin-bottom: 100px;
-    }
-}
+}  
 
-@media screen and (min-width:576px) and (max-width: 768px) {
-    div.kissa {
-        font-size: 34px;
-        left: 50px;
-        top: 180px;
-        color: #fafafa;
-        font-weight: 700;
-        letter-spacing: 0.09em;
-        z-index: 1;
-        position: absolute;
-        padding: 15px;
-        border: 8px solid #fafafa;
-        text-align: center;
-        margin: 0 auto;
-        background: linear-gradient(90deg, rgba(0, 0, 26, 0.5)60%, rgba(0, 0, 0, 0)100%);
-    }
-    main.one {
-        margin: 0 auto;
-        margin-bottom: 150px;
-    }
-}
 
-@media screen and (min-width:768px) and (max-width: 1199px) {
+
+@media screen and (min-width:576px) and (max-width: 1199px) {
     div.kissa {
-        font-size: 38px;
-        left: 80px;
-        top: 200px;
         color: #fafafa;
-        font-weight: 700;
-        letter-spacing: 0.09em;
-        z-index: 1;
-        position: absolute;
-        padding: 15px;
-        border: 8px solid #fafafa;
-        text-align: center;
-        margin: 0 auto;
-        background: linear-gradient(90deg, rgba(0, 0, 26, 0.5)60%, rgba(0, 0, 0, 0)100%);
+        border: 6px solid #fafafa;
+        background-color:rgba(54, 91, 86, 0.1);
+        font-size: 44px;
+        left: 15%;   
     }
-    main.one {
-        margin: 0 auto;
-        margin-bottom: 100px;
-    }
+
 }
 
 @media screen and (min-width:1200px) and (max-width: 1430px) {
     div.kissa {
-        font-size: 42px;
-        top: 250px;
-        color: #282828;
-        font-weight: 700;
-        left: 100px;
-        letter-spacing: 0.09em;
-        z-index: 1;
-        position: absolute;
-        padding: 15px;
-        border: 8px solid #282828;
-        text-align: left;
-        /* background-color:#FBD431; */
+font-size: 54px;
+
     }
 }
 
@@ -241,13 +184,12 @@ a.seemoreuser {
     line-height: 1;
     margin: 0px auto;
     overflow: visible;
-    padding: 0px 2rem;
+    padding: 0.8rem 2rem;
     text-transform: none;
     display: inline-flex;
     position: relative;
     align-items: center;
     justify-content: center;
-    height: 2.875rem;
     border: 0px none;
     border-radius: 2em;
     font-size: 18px;
@@ -258,6 +200,7 @@ a.seemoreuser {
     margin-bottom: 40px;
     margin-top: 40px;
     letter-spacing: 1px;
+    height: 2.875rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -302,6 +245,8 @@ div.about {
     text-align: center;
     justify-content: space-around;
     margin-top: 50px;
+    padding-bottom: 50px;
+
 }
 
 @media screen and (max-width:1200px) {
@@ -312,18 +257,21 @@ div.about {
 
 div.user_title1 {
     width: 40%;
+    margin-top: 75px;
 }
 
 @media screen and (max-width:1000px) {
     div.user_title1 {
-        width: 100%;
+        width: 80%;
         flex-direction: column;
+        /* padding: 0 50px */
     }
+
 }
 
 div.abtimg>img {
     width: 500px;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     max-width: 100%;
 }
 
@@ -335,18 +283,16 @@ span.recommended1 {
     font-weight: bold;
     position: absolute;
     z-index: 9;
-    margin-top: 50px;
 }
 
 span.dis1 {
     display: inline-block;
     text-align: left;
-    margin-top: 120px;
+    margin-top: 70px;
     font-size: 20px;
     color: #121416;
     letter-spacing: 0.5px;
     font-weight: 600;
-    padding-right: 50px;
 }
 
 @media screen and (min-width:768px) and (max-width: 1200px) {
@@ -364,6 +310,8 @@ span.dis1 {
 @media screen and (max-width: 1200px) {
     span.dis1 {
         font-size: 16px;
+        margin-bottom: 20px;
+        margin-top: 50px;
     }
 }
 
@@ -371,7 +319,7 @@ span.dis1 {
     background: none rgb(18, 20, 22);
     cursor: pointer;
     line-height: 1;
-    overflow: visible;
+
     padding: 0.8rem 2rem;
     border: 0px none;
     border-radius: 2em;
@@ -386,7 +334,7 @@ span.dis1 {
 }
 
 .seemoreuser5 {
-    background: #c75656;
+    background: #365B56;
     cursor: pointer;
     line-height: 1;
     overflow: visible;
@@ -399,12 +347,18 @@ span.dis1 {
     text-align: center;
     letter-spacing: 1px;
     justify-content: center;
+    
 }
 
 @media screen and (max-width: 767px) {
     a.seemoreuser4, a.seemoreuser5 {
         font-size: 16px;
         margin-bottom: 120px;
+    }
+    .seemoreuser5 {
+        display:block;
+        padding: 0.8rem 0;
+        overflow: visible;
     }
 }
 
@@ -415,7 +369,7 @@ div.more4 {
 }
 
 a.seemoreuser4:hover, a.seemoreuser5:hover {
-    background: #365B56;
+    background: #435856;
     transition-duration: 0.3s;
     transform: perspective(1px) translateZ(0);
 }
@@ -528,15 +482,19 @@ div.courses-container {
     transform: perspective(2px) translateX(-1.5px) translateY(-1.5px);
     cursor: pointer;
 }
-
-@media (max-width: 767px) {
+@media (min-width: 1023px) and (max-width: 1200px) {
+    .course:nth-child(4) {
+        display: none;
+    }
+}
+/* @media (max-width: 766px) {
     .course:nth-child(3) {
         display: none;
     }
     .course:nth-child(4) {
         display: none;
     }
-}
+} */
 
 .course-info {
     padding: 10px;
@@ -793,7 +751,7 @@ a.seemoreuser1 {
     line-height: 1;
     margin: 0px auto;
     overflow: visible;
-    padding: 0px 2rem;
+    padding: 0.8rem 2rem;
     text-transform: none;
     display: inline-flex;
     position: relative;
@@ -924,7 +882,7 @@ div.topics {
 
 .card {
     margin-right: 25px;
-    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+    transition: all .9s cubic-bezier(0.175, 0.885, 0, 1);
     background-color: snow;
     width: 33.3%;
     position: relative;
@@ -1005,7 +963,7 @@ a.seemoreuser3 {
     line-height: 1;
     margin: 0px auto;
     overflow: visible;
-    padding: 0px 2rem;
+    padding: 0.8rem 2rem;
     text-transform: none;
     display: inline-flex;
     position: relative;
@@ -1041,4 +999,32 @@ a.seemoreuser3:hover {
     background: #365B56;
     transition-duration: 0.3s;
     transform: perspective(1px) translateZ(0);
+}
+
+
+.go-top {
+    font-family: "Proxima Nova";
+	position: fixed;
+	bottom: 80px;
+	right: 50px;
+	text-decoration: none;
+	color:#fafafa;
+	background-color: rgba(54, 91, 86, 0.95);
+    font-size: 14px;
+    font-weight:600;
+    letter-spacing: 1px;
+	padding: 1em;
+    display: none;
+    border-radius: 5px;
+}
+
+.go-top:hover {
+	background-color: #282828;
+}
+
+@media screen and (max-width: 767px) {
+    .go-top{
+        right: 8px;
+        bottom: 130px;
+    }
 }

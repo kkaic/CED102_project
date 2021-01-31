@@ -246,6 +246,14 @@ div.cafeinfo {
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    div.cafeinfo {
+        padding-left: 10px;
+        text-align: left;
+    }
+}
+
+
 div.cafeinfo h3 {
     font-size: 22px;
     margin-bottom: 10px;
@@ -343,26 +351,7 @@ div.comment {
     }
 }
 
-div.comments_card {
-    display: inline-block;
-    margin-right: 15px;
-    margin-left: 15px;
-    border-radius: 10px;
-    /* background-color: #eeecec; */
-    width: 500px;
-}
 
-
-/* @media screen and (min-width: 768px){
-.slick-initialized .slick-slide{
-    width:500px;
-}
-} */
-
-div.comments_card span {
-    font-size: 12px;
-    color: #948D8B;
-}
 
 div.comment h3 {
     display: inline-block;
@@ -421,20 +410,12 @@ div.pen span {
     bottom: 1.5px;
 }
 
-/* --------------------card----- */
-
-div.comments_card {
-    overflow: hidden;
-    height: 150px;
-    border: 1px solid rgb(203, 203, 203);
-}
 
 /* -------------------author-------------- */
 
 div.authorcontainer {
     padding: 10px 15px;
     position: relative;
-    width: 55%;
     margin: 0;
 }
 
@@ -444,9 +425,11 @@ div.author {
     position: relative;
 }
 
+
 div.author a.photo img {
     width: 40px;
     display: inline-block;
+    overflow:visible;
 }
 
 div.name {
@@ -454,7 +437,16 @@ div.name {
     /* border: 1px solid black; */
     display: inline-block;
     position: absolute;
-    padding-top: 8px;
+    padding-top: 3px;
+    padding-left: 3px;
+}
+
+span.date {
+    vertical-align: baseline;
+    margin: 0;
+    padding-left: 3px;
+position: relative;
+bottom:3px;
 }
 
 div.star {
@@ -469,6 +461,33 @@ div.star img {
 }
 
 /* ---------comment_content-------------------- */
+div.comments_card {
+    display: inline-block;
+    position: relative;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 10px;
+    overflow:hidden;
+    height: 170px;
+    border: 1px solid rgb(203, 203, 203);
+}
+
+@media screen and (min-width: 992x) and (max-width: 1200px) {
+    div.comments_card {
+        height:250px;
+    }
+}
+@media screen and (max-width: 767px) {
+    div.comments_card {
+        height:230px;
+    }
+}
+
+
+div.comments_card span {
+    font-size: 12px;
+    color: #948D8B;
+}
 
 @media screen and (max-width: 992px) {
     div.comment, div.slick-track, .slick-slider .slick-track, .slick-slider .slick-list {
@@ -482,15 +501,17 @@ div.comment_content {
     width: 65%;
     margin: 0;
     font-size: 14px;
-    padding: 5px 18px;
+    padding: 15px 15px 30px 15px;
     text-justify: inter-ideograph;
     /* text-align: justify; */
 }
 
-span.date {
-    vertical-align: baseline;
-    margin: 0;
-}
+span.class{
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-block;
+}    
+
 
 /* -----------------userphoto--------------- */
 
@@ -504,6 +525,14 @@ div.user_photo img {
     width: 33%;
     position: absolute;
     right: 0;
+}
+
+@media screen and (max-width: 576px) {
+    div.user_photo img {
+       top: 80px;
+
+
+    }
 }
 
 /* --------button------ */
@@ -587,7 +616,7 @@ div.pre, div.next{
     position: relative;
     transition-property: color;
     transition-duration: 0.3s;
-    width: 20%;
+    width:30%;
     padding: 10px 15px;
 
 }
@@ -601,7 +630,8 @@ div.pre, div.next{
     position: relative;
     transition-property: color;
     transition-duration: 0.3s;
-    padding-top: 15px;
+    padding: 10px 15px;
+
 
 }
 
@@ -652,4 +682,31 @@ div.all>a:hover, div.all>a:focus, div.all>a:active, div.pre:hover, div.pre:focus
 
 div.all>a:hover:before, div.all>a:focus:before, div.all>a:active:before, div.pre:hover:before, div.pre:focus:before, div.pre:active:before, div.next:hover:before, div.next:focus:before, div.next:active:before {
     transform: scaleX(1);
+}
+
+.go-top {
+    font-family: "Proxima Nova";
+	position: fixed;
+	bottom: 80px;
+	right: 50px;
+	text-decoration: none;
+	color:#fafafa;
+	background-color: rgba(54, 91, 86, 0.95);
+    font-size: 14px;
+    font-weight:600;
+    letter-spacing: 1px;
+	padding: 1em;
+    display: none;
+    border-radius: 5px;
+}
+
+.go-top:hover {
+	background-color: #282828;
+}
+
+@media screen and (max-width: 767px) {
+    .go-top{
+        right: 8px;
+        bottom: 130px;
+    }
 }

@@ -86,9 +86,6 @@ div.article_card {
 }
 
 @media screen and (max-width: 575px) {
-    /* div.article_card {
-        width: 400px;
-    } */
     div.feature {
         font-size: 22px;
     }
@@ -120,12 +117,9 @@ div.article_card {
     div.article_card, div.article_card img {
         width: 90%;
     }
-    div.article_card img:hover {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) scale(1.1);
-        transition-duration: 0.8s;
-    }
+    /* div.article_card img:hover {
+        transform: none;
+    } */
 }
 
 div.article_card img {
@@ -134,15 +128,16 @@ div.article_card img {
     border-radius: 5px;
 }
 
-div.article_card img:hover {
+@media screen and (min-width: 767px){
+  div.article_card img:hover {
     width: 100%;
     opacity: 0.95;
     border-radius: 5px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(1.1);
+    transform: scale(1.1);
     transition-duration: 0.8s;
+} 
 }
+
 
 div.article_card div.article_all {
     font-size: 16px;
@@ -213,7 +208,7 @@ div.latest_card:hover {
 @media screen and (max-width: 575px) {
     div.latest_card {
         width: 90%;
-        height: 380px;
+        height: 350px;
     }
 }
 
@@ -303,4 +298,31 @@ a.seemoreuser:hover {
     background: #365B56;
     transition-duration: 0.3s;
     transform: perspective(1px) translateZ(0);
+}
+
+.go-top {
+    font-family: "Proxima Nova";
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+    text-decoration: none;
+    color: #fafafa;
+    background-color: rgba(54, 91, 86, 0.95);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 1em;
+    display: none;
+    border-radius: 5px;
+}
+
+.go-top:hover {
+    background-color: #282828;
+}
+
+@media screen and (max-width: 767px) {
+    .go-top {
+        right: 8px;
+        bottom: 130px;
+    }
 }

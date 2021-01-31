@@ -1,18 +1,20 @@
 @import "./content/all.css";
 @import "./content/header.css";
 @import "./content/footer.css";
-
-*{ font-family: "Proxima Nova";
+* {
+    font-family: "Proxima Nova";
 }
+
 /* ----------TOPICS------------ */
-div.city_topics{
+
+div.city_topics {
     font-size: 48px;
     margin: 0 auto;
-   /* padding-top: 100px; */
-   font-weight: 800;
-   padding: 80px 0px 20px;
-   text-align: center;
-   letter-spacing: 0.13em;
+    /* padding-top: 100px; */
+    font-weight: 800;
+    padding: 80px 0px 20px;
+    text-align: center;
+    letter-spacing: 0.13em;
 }
 
 @media screen and (max-width: 767px) {
@@ -20,119 +22,52 @@ div.city_topics{
         font-size: 32px;
     }
 }
-/* ---------brad----------- */
-div.breadcrumb{
-    background-color: #f4f4f4;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-  }
-
-  @media screen and (max-width: 767px) {
-    div.breadcrumb{
-        display: none;
-    }
-}
-  div.breadcrumb ol.breadcrumb_list{
-    margin: 0 auto;
-    padding: 10px;
-    list-style: none;
-    width: 1000px;
-    padding-left: 30px;
-  }
-
-  
-@media screen and (max-width: 992px) {
-    div.breadcrumb, div.breadcrumb ol.breadcrumb_list{
-        width:100%;
-       
-    }
-}
-  div.breadcrumb ol.breadcrumb_list > li{
-    display: inline-block;
-    margin-right: 10px;
-  }
-
-  @media screen and (max-width: 992px) {
-    div.breadcrumb ol.breadcrumb_list{
-        margin-left: 10px; 
-    }
-}
- 
-  
-  
-  
-  /* 利用 ::before 擬似元素，創造斜線做為分隔 */
-  div.breadcrumb ol.breadcrumb_list > li::before{
-    content: "/";
-    font-size: 18px;
-    color: #aaa;
-    margin-right: 12px;
-  }
-  /* 第一個 li 元素，將 ::before 設定回來需要的 */
-  div.breadcrumb ol.breadcrumb_list > li:first-child::before{
-    content: "";
-    margin-right: 0;
-  }
-  
-  
-  /* 基本文字樣式 */
-  div.breadcrumb ol.breadcrumb_list > li > a{
-    text-decoration: none;
-    display: inline-block;
-    color: #457755;
-    
-  }
-  
-
-  /* 滑動移過後改變文字顏色 */
-  div.breadcrumb ol.breadcrumb_list > li > a:hover{
-    color: #457755;
-  }
-  
 
 /* ----------main------------ */
-div.tokyobox{
+
+div.tokyobox {
     /* border: 1px solid black; */
-    width:960px;
+    width: 960px;
     margin: 0 auto;
 }
 
 @media screen and (max-width: 1200px) {
-    div.tokyobox{
-        width:90%;
+    div.tokyobox {
+        width: 90%;
     }
 }
-div.tokyobanner img{
-    width:100%;
+
+div.tokyobanner img {
+    width: 100%;
 }
-div.area{
+
+div.area {
     font-size: 24px;
     margin: 0 auto;
-   padding-top: 50px;
-   font-weight: 500;
-   text-align: center;
-   color: #282828;
-
+    padding-top: 50px;
+    font-weight: 500;
+    text-align: center;
+    color: #282828;
 }
+
 /* ------------------area tag----------- */
 
-div.areatag_listall{
+div.areatag_listall {
     font-family: "Proxima Nova";
-    color:#282828;
+    color: #282828;
     text-align: center;
-   
-    
 }
-div.areatag_listall ul.areatag_all{
+
+div.areatag_listall ul.areatag_all {
     list-style: none;
     clear: both;
     padding-left: 0px;
 }
-div.areatag_listall ul.areatag_all > li{
+
+div.areatag_listall ul.areatag_all>li {
     display: inline-block;
     margin: 5px;
-    color:#757575;
+    color: #757575;
     background-color: rgb(255, 255, 255);
     padding: 0px 1em;
     border: 1px solid rgb(203, 203, 203);
@@ -141,7 +76,7 @@ div.areatag_listall ul.areatag_all > li{
     color: rgb(102, 112, 124);
 }
 
-div.areatag_listall ul.areatag_all > li:hover{
+div.areatag_listall ul.areatag_all>li:hover {
     display: inline-block;
     margin: 5px;
     background-color: rgb(255, 255, 255);
@@ -153,63 +88,59 @@ div.areatag_listall ul.areatag_all > li:hover{
     background-color: #f4f4f4;
 }
 
-div.areatag_listall ul.areatag_all > li > a{
+div.areatag_listall ul.areatag_all>li>a {
     display: inline-block;
     font-size: 14px;
     text-decoration: none;
     padding: 5px 10px;
 }
-div.areatag_listall ul.areatag_all > li > a:visited {
+
+div.areatag_listall ul.areatag_all>li>a:visited {
     color: rgb(102, 112, 124);
 }
 
-div.areatag_listall ul.areatag_all > li.hide{
-    display:none;
+div.areatag_listall ul.areatag_all>li.hide {
+    display: none;
 }
 
 @media screen and (max-width: 767px) {
-    div.areatag_listall ul.areatag_all > li.hide,div.areatag_listall ul.areatag_all > li.hide1{
+    div.areatag_listall ul.areatag_all>li.hide, div.areatag_listall ul.areatag_all>li.hide1 {
         display: none;
     }
 }
 
-
-
-div.show{
+div.show {
     padding: 5px;
     padding-bottom: 50px;
-    color:#000000 ;
-     cursor: pointer;
-
+    color: #000000;
+    cursor: pointer;
 }
-div.areatag_listall ul.areatag_all div.show > a{
+
+div.areatag_listall ul.areatag_all div.show>a {
     font-size: 14px;
     text-decoration: none;
     padding: 10px;
     color: #282828;
-   
-}
-a:-webkit-any-link {
-    color: #282828;
-}
-div.areatag_listall ul.areatag_all div.show > a:visited{
-    color: #282828;
-
 }
 
+
+div.areatag_listall ul.areatag_all div.show>a:visited {
+    color: #282828;
+}
 
 /* ------------------cafe----------- */
-div.cafe_all{
+
+div.cafe_all {
     text-align: center;
 }
 
 div.cafe {
     border: 1px solid #DAE0E6;
-	background-color: #fff;
-	border-radius: 5px;
-	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-	max-width: 100%;
-	overflow: hidden;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    overflow: hidden;
     width: 250px;
     height: 330px;
     position: relative;
@@ -217,35 +148,34 @@ div.cafe {
     margin: 20px;
 }
 
-    div.cafe:hover{
-        border: 1px solid #DAE0E6;
-	background-color: #fff;
-	border-radius: 5px;
-	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-	max-width: 100%;
-	overflow: hidden;
+div.cafe:hover {
+    border: 1px solid #DAE0E6;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    overflow: hidden;
     width: 250px;
     height: 330px;
     position: relative;
     display: inline-block;
     margin: 20px;
     box-shadow: 0 8px 8px 5px rgba(0, 0, 0, 0.2);
-        transform: perspective(2px) translateX(-1.5px) translateY(-1.5px);
-        cursor: pointer;
-    }
-
+    transform: perspective(2px) translateX(-1.5px) translateY(-1.5px);
+    cursor: pointer;
+}
 
 @media screen and (max-width: 992px) {
-    div.cafe:nth-child(9){
-        display:none;
+    div.cafe:nth-child(9) {
+        display: none;
     }
 }
 
-div.bookmark{
+div.bookmark {
     position: absolute;
     display: inline-block;
     right: 10px;
-    top:10px;
+    top: 10px;
     background: rgb(255, 255, 255);
     width: 35px;
     height: 35px;
@@ -256,77 +186,69 @@ div.bookmark{
     cursor: pointer;
 }
 
-div.bookmark img{
+div.bookmark img {
     width: 18px;
 }
 
 @media (max-width: 767px) {
     div.bookmark {
         width: 40px;
-        height:40px;
+        height: 40px;
     }
-    div.bookmark img{
+    div.bookmark img {
         width: 20px;
     }
 }
 
-.cafephoto a img{
+.cafephoto a img {
     width: 100%;
 }
 
-.cafephoto{
+.cafephoto {
     position: relative;
     font-size: 0;
     width: 250px;
 }
-.cafeinfo h3{
+
+.cafeinfo h3 {
     margin: 0px;
     padding-left: 5px;
-    padding-top:5px;
+    padding-top: 5px;
     color: #282828;
     letter-spacing: 0.5px;
 }
 
-div.user{
+div.user {
     padding-left: 5px;
     /* padding:5px; */
     position: relative;
     margin-top: 30px
-    
 }
 
-
-
-
-.cafeinfo{
-	padding:10px;
+.cafeinfo {
+    padding: 10px;
     width: 100%;
     display: inline-block;
     font-size: 14px;
     /* vertical-align: middle; */
     text-align: justify;
-    text-justify:inter-ideograph;
+    text-justify: inter-ideograph;
 }
 
-
-
-
-
-.cafeinfo div.founded img,.cafeinfo div.location img{
+.cafeinfo div.founded img, .cafeinfo div.location img {
     width: 15px;
     margin: 5px;
     position: relative;
     top: 6px;
     margin-right: 5px;
-
 }
 
-.cafeinfo div.location, .cafeinfo div.founded{
+.cafeinfo div.location, .cafeinfo div.founded {
     font-weight: 500;
-    color:#888888;
+    color: #888888;
 }
 
-.cafeinfo div.user img{
+.cafeinfo div.user img {
     width: 20px;
 }
 
@@ -336,32 +258,29 @@ div.user{
     }
 }
 
-.cafeinfo div.user img.heart{
+.cafeinfo div.user img.heart {
     width: 20px;
-    right:10px;
+    right: 10px;
     position: absolute;
     cursor: pointer;
 }
 
-
-
-.cafeinfo span.ossme{
+.cafeinfo span.ossme {
     font-size: 10px;
     color: #AAADAD;
     padding: 5px;
     font-weight: 600;
     position: relative;
-    bottom:4px;
+    bottom: 4px;
 }
 
-
 /* ----------see MORE----------------- */
-div.more{
+
+div.more {
     text-align: center;
     margin: 0 auto;
     padding-bottom: 30px;
 }
-
 
 a.seemoreuser {
     appearance: none;
@@ -396,13 +315,40 @@ a.seemoreuser {
     }
 }
 
-button.seemoreuser:visited{
+button.seemoreuser:visited {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
 
-a.seemoreuser:hover{
-    background:#365B56;
+a.seemoreuser:hover {
+    background: #365B56;
     transition-duration: 0.3s;
     transform: perspective(1px) translateZ(0);
+}
+
+.go-top {
+    font-family: "Proxima Nova";
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+    text-decoration: none;
+    color: #fafafa;
+    background-color: rgba(54, 91, 86, 0.95);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 1em;
+    display: none;
+    border-radius: 5px;
+}
+
+.go-top:hover {
+    background-color: #282828;
+}
+
+@media screen and (max-width: 767px) {
+    .go-top {
+        right: 8px;
+        bottom: 130px;
+    }
 }

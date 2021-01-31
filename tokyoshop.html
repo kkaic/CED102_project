@@ -14,55 +14,45 @@
 </head>
 
 <body>
-  <!-- ------------------------------------------header------------------------------------------------------>
- 
-  <header class="header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
-     
-    <a href="./index.html" class="logo_img"><img src="./image/normalheader-05.png"></a>
-    <nav class="nav">
-      <ul class="link_list">
-        <li><a href=".\city.html">CITIES</a>
-          <div class="city_block">
-            <ul class="city_list">
-              <li>
-                <a href="#">TOKYO</a>
-              </li>
-              <li>
-                <a href="#">OSAKA</a>
-              </li>
-              <li>
-                <a href="#">KOBE</a>
-              </li>
-              <li>
-                <a href="#">NAGOYA</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li><a href="./discover.html">INSPIRATIONS</a></li>
-        <li><a href="./topics.html">TOPICS</a></li>
-        <li><a href="#">ABOUT KISSA</a></li>
-        <li><a href="#" class="account_img"><img src="./image/icon/round-account-button-with-user-inside.png"></a></li>
-      </ul>
-      <div class="burger">
-        <!-- <input type="checkbox" class="checkbox"> -->
-        <div class="span-container">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        
-      </div>
-    </nav>
-    
+    <!-- ------------------------------------------header------------------------------------------------------>
 
-  </header>
-  <div class="nav-container">
-    <a href="./city.html">CITIES</a>
-    <a href="./discover.html">INSPIRATIONS</a>
-    <a href="./topics.html">TOPICS</a>
-    <a href="#">ABOUT KISSA</a>
-  </div>
+    <header class="header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+
+        <a href="./index.html" class="logo_img"><img src="./image/normalheader-05.png"></a>
+        <nav class="nav">
+            <ul class="link_list">
+                <li><a href=".\city.html">Cities</a></li>
+                <li><a href="./discover.html">Inspiration</a></li>
+                <li><a href="./topics.html">Topics</a></li>
+                <li><a href="#">About KISSA</a></li>
+                <li><a href="#" class="account_img"><img src="./image/icon/./account28.png"></a></li>
+            </ul>
+            <div class="burger">
+                <!-- <input type="checkbox" class="checkbox"> -->
+                <div class="span-container">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+        </nav>
+
+
+    </header>
+    <div class="nav-container">
+        <a href="./index.html">Home</a>
+        <a href="./city.html">Cities</a>
+        <a href="./discover.html">Inspirations</a>
+        <a href="./topics.html">Topics</a>
+        <a href="#">About KISSA</a>
+        <a href="#">Cooperate With Us </a>
+        <br>
+        <br>
+        <a href="#">My Account</a>
+        <a href="#"></a>
+
+    </div>
     <!-- ------------------------------------------main-------------------------------------------------------- -->
     <div class="cafe_info_all" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="800">
         <div class="type">
@@ -169,10 +159,8 @@
 
                     <div class="comment_content">
                         Great coffee selection. Relaxing, cozy atmosphere with nice jazz playing. Very kind service.
-                        Went right when they opened...
-                        <span>
-                            <a href="#">More</a>
-                        </span>
+                        Went right when they opened...<span class="more">More</span>
+                        
                     </div>
 
 
@@ -188,7 +176,7 @@
                         <div class="author">
                             <a href="#" class="photo"><img src="./image/user_profile/donn-round.png"></a>
                         </div>
-                        <div class="name">Penelope Harris
+                        <div class="name">Harris
                         </div>
                         <!-- <div class="star">
                             <img src=".\image\icon\star (1).png">
@@ -200,10 +188,7 @@
 
                     <div class="comment_content">
                         Nothing else like this place exists in tokyo. For music lovers. The interior is dark and dim,
-                        perfect for relaxing and listening to music...
-                        <span>
-                            <a href="#">More</a>
-                        </span>
+                        perfect for relaxing and listening to music...<span class="more">More</span>
                     </div>
 
                 </div>
@@ -217,7 +202,7 @@
                         <div class="author">
                             <a href="#" class="photo"><img src="./image/user_profile/sicong-round.png"></a>
                         </div>
-                        <div class="name">Penelope Harris
+                        <div class="name">Penelope
                         </div>
                         <!-- <div class="star">
                             <img src=".\image\icon\star (1).png">
@@ -246,11 +231,6 @@
                         </div>
                         <div class="name">Celeste Mills
                         </div>
-                        <!-- <div class="star">
-                            <img src=".\image\icon\star (1).png">
-                            <img src=".\image\icon\star (1).png">
-                            <img src=".\image\icon\star (1).png">
-                        </div> -->
                         <span class="date">2020/08/08</span>
                     </div>
 
@@ -269,9 +249,9 @@
 
             <div class="next">NEXT<br><span>Café Sky</span></div>
         </div>
-
+        
     </div>
-
+    <a href="#" class="go-top">Go Top</a>
 
     <!-- ------------------------------------------footer-------------------------------------------------------- -->
     <footer class="footer">
@@ -292,9 +272,9 @@
         &copy; 2020 KISSA Ltd. All Rights Reserved.
     </footer>
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="./slickall/slick/slick.min.js"></script>
+    <script src="./vendors/aos/js/aos.js"></script>
 
     <script>
         $('.photoall').slick({
@@ -330,7 +310,7 @@
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1.05,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                 }
             },
@@ -338,18 +318,29 @@
             ]
         });
 
-
-
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./vendors/aos/js/aos.js"></script>
-    <script>
         AOS.init();
 
-        $('div.span-container').on("click", function(){
-      $('.nav-container').toggleClass("on")
-    });
+        $('div.span-container').on("click", function () {
+            $('.nav-container').toggleClass("on")
+        });
 
+        $(document).ready(function () {
+            // Show or hide the sticky footer button
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200) {
+                    $('.go-top').fadeIn(200);
+                } else {
+                    $('.go-top').fadeOut(200);
+                }
+            });
+
+            // Animate the scroll to top
+            $('.go-top').click(function (event) {
+                event.preventDefault();
+
+                $('html, body').animate({ scrollTop: 0 }, 300);
+            })
+        });
     </script>
 
 </body>

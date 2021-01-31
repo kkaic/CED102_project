@@ -12,34 +12,16 @@
 
 <body>
   <!-- ------------------------------------------header------------------------------------------------------>
-
   <header class="header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
-
+     
     <a href="./index.html" class="logo_img"><img src="./image/normalheader-05.png"></a>
     <nav class="nav">
       <ul class="link_list">
-        <li><a href=".\city.html">CITIES</a>
-          <div class="city_block">
-            <ul class="city_list">
-              <li>
-                <a href="#">TOKYO</a>
-              </li>
-              <li>
-                <a href="#">OSAKA</a>
-              </li>
-              <li>
-                <a href="#">KOBE</a>
-              </li>
-              <li>
-                <a href="#">NAGOYA</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li><a href="./discover.html">INSPIRATIONS</a></li>
-        <li><a href="./topics.html">TOPICS</a></li>
-        <li><a href="#">ABOUT KISSA</a></li>
-        <li><a href="#" class="account_img"><img src="./image/icon/round-account-button-with-user-inside.png"></a></li>
+        <li><a href=".\city.html">Cities</a></li>
+        <li><a href="./discover.html">Inspiration</a></li>
+        <li><a href="./topics.html">Topics</a></li>
+        <li><a href="#">About KISSA</a></li>
+        <li><a href="#" class="account_img"><img src="./image/icon/./account28.png"></a></li>
       </ul>
       <div class="burger">
         <!-- <input type="checkbox" class="checkbox"> -->
@@ -48,23 +30,30 @@
           <span></span>
           <span></span>
         </div>
-
+        
       </div>
     </nav>
-
+    
 
   </header>
   <div class="nav-container">
-    <a href="./city.html">CITIES</a>
-    <a href="./discover.html">INSPIRATIONS</a>
-    <a href="./topics.html">TOPICS</a>
-    <a href="#">ABOUT KISSA</a>
+    <a href="./index.html">Home</a>
+    <a href="./city.html">Cities</a>
+    <a href="./discover.html">Inspirations</a>
+    <a href="./topics.html">Topics</a>
+    <a href="#">About KISSA</a>
+    <a href="#">Cooperate With Us </a>
+<br>
+<br>
+    <a href="#">My Account</a>
+    <a href="#"></a>
+
   </div>
 
   <!-- ------------------------------------------main ------------------------------------------------------->
   <div class="tokyobox">
     <div class="city_topics" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="800">TOKYO
-      <!-- <hr class="user_title"> -->
+
     </div>
     <div class="tokyobanner" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="800"><img
         src="./image/tokyo_list/ia_0667_tokyo_miwa-goto-1.jpg"></div>
@@ -343,6 +332,7 @@
     </div>
     <div class="more" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"><a href="#"
         class="seemoreuser">Load More </a></div>
+        <a href="#" class="go-top">Go Top</a>
   </div>
 
   <!-- ------------------------------------------footer------------------------------------------------------->
@@ -365,27 +355,35 @@
     &copy; 2020 KISSA Ltd. All Rights Reserved.
   </footer>
 
-
-
-  <script>
-
-
-  </script>
-
-
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./vendors/aos/js/aos.js"></script>
+
+
+
   <script>
     AOS.init();
 
-    $('div.span-container').on("click", function () {
+    $('.span-container').on("click", function(){
       $('.nav-container').toggleClass("on")
-    });
+    })
 
-    $('div.span-container').on("click", function(){
-      $('.nav-container').toggleClass("on")
-    });
+    $(document).ready(function() {
+			// Show or hide the sticky footer button
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('.go-top').fadeIn(200);
+				} else {
+					$('.go-top').fadeOut(200);
+				}
+			});
+			
+			// Animate the scroll to top
+			$('.go-top').click(function(event) {
+				event.preventDefault();
+				
+				$('html, body').animate({scrollTop: 0}, 300);
+			})
+		});
 
   </script>
 </body>

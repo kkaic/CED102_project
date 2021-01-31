@@ -2,86 +2,85 @@
 @import "./content/header.css";
 @import "./content/footer.css";
 @import "./content/topicsnav.css";
-
 /* ---------brad----------- */
-div.breadcrumb{
+
+div.breadcrumb {
     background-color: #f4f4f4;
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 14px;
-  }
+}
 
-  @media screen and (max-width: 767px) {
-    div.breadcrumb{
+@media screen and (max-width: 767px) {
+    div.breadcrumb {
         display: none;
     }
 }
-  div.breadcrumb ol.breadcrumb_list{
+
+div.breadcrumb ol.breadcrumb_list {
     margin: 0 auto;
     padding: 10px;
     list-style: none;
     width: 768px;
     padding-left: 0;
-  }
+}
 
-  
 @media screen and (max-width: 992px) {
-    div.breadcrumb, div.breadcrumb ol.breadcrumb_list{
-        width:100%;
-       
+    div.breadcrumb, div.breadcrumb ol.breadcrumb_list {
+        width: 100%;
     }
 }
-  div.breadcrumb ol.breadcrumb_list > li{
+
+div.breadcrumb ol.breadcrumb_list>li {
     display: inline-block;
     margin-right: 10px;
-  }
+}
 
-  @media screen and (max-width: 992px) {
-    div.breadcrumb ol.breadcrumb_list > li{
-        margin-left: 20px; 
+@media screen and (max-width: 992px) {
+    div.breadcrumb ol.breadcrumb_list>li {
+        margin-left: 20px;
     }
 }
- 
-  
-  
-  
-  /* 利用 ::before 擬似元素，創造斜線做為分隔 */
-  div.breadcrumb ol.breadcrumb_list > li::before{
+
+/* 利用 ::before 擬似元素，創造斜線做為分隔 */
+
+div.breadcrumb ol.breadcrumb_list>li::before {
     content: "/";
     font-size: 18px;
     color: #666C70;
     margin-right: 12px;
-  }
-  /* 第一個 li 元素，將 ::before 設定回來需要的 */
-  div.breadcrumb ol.breadcrumb_list > li:first-child::before{
+}
+
+/* 第一個 li 元素，將 ::before 設定回來需要的 */
+
+div.breadcrumb ol.breadcrumb_list>li:first-child::before {
     content: "";
     margin-right: 0;
-  }
-  
-  
-  /* 基本文字樣式 */
-  div.breadcrumb ol.breadcrumb_list > li > a{
+}
+
+/* 基本文字樣式 */
+
+div.breadcrumb ol.breadcrumb_list>li>a {
     text-decoration: none;
     display: inline-block;
     color: #457755;
-    
-  }
-  
+}
 
-  /* 滑動移過後改變文字顏色 */
-  div.breadcrumb ol.breadcrumb_list > li > a:hover{
+/* 滑動移過後改變文字顏色 */
+
+div.breadcrumb ol.breadcrumb_list>li>a:hover {
     color: #365B56;
-  }
-  
+}
 
 /* -----------title---------------- */
-div.type{
+
+div.type {
     text-align: left;
-    padding-top:20px;
+    padding-top: 20px;
     font-size: 13px;
     letter-spacing: 1.5px;
     font-weight: 500;
-  color: #868686;
+    color: #868686;
 }
 
 /* @media screen and (max-width: 992px) {
@@ -90,67 +89,65 @@ div.type{
     }
 } */
 
-
-
-div.type span{
-    background-color:#666C70;
+div.type span {
+    background-color: #365B56;
     color: white;
     border-radius: 5px;
     padding: 4px;
     font-size: 12px;
     cursor: pointer;
-    
 }
 
-div.article{
+div.article {
     font-family: "Proxima Nova";
-    color:#282828;
+    color: #282828;
     text-align: center;
     font-size: 18px;
     clear: both;
     position: relative;
 }
 
-div.title{
+div.title {
     font-size: 32px;
     font-weight: 600;
     text-align: left;
-    margin:20px 0;
+    margin: 20px 0;
 }
+
 @media screen and (max-width: 767px) {
-    div.title{
+    div.title {
         font-size: 26px;
         /* margin-left:20px; */
     }
 }
 
 @media screen and (min-width:576px)and (max-width: 992px) {
-    div.title{
-        margin:10px 0 10px 0;
+    div.title {
+        margin: 10px 0 10px 0;
     }
 }
-div.topics_title_all{
+
+div.topics_title_all {
     /* border: 1px solid red; */
-    width:768px;
+    width: 768px;
     margin: 0 auto;
     padding: 10px 0;
     padding-top: 5px;
 }
 
-@media screen  and (max-width: 992px) {
-    div.topics_title_all{
+@media screen and (max-width: 992px) {
+    div.topics_title_all {
         width: 90%;
     }
 }
 
-
-div.topics_title_all::after{
+div.topics_title_all::after {
     content: "";
     display: block;
     clear: both;
 }
 
-div.topics_img img{
+div.topics_img img {
     width: 768px;
     /* position: absolute; */
     margin: 0 auto;
@@ -158,36 +155,38 @@ div.topics_img img{
 
 @media screen and (max-width: 992px) {
     div.topics_img img {
-        width:100%;
+        width: 100%;
     }
 }
-div.topics_img{
-    font-size: 0; 
+
+div.topics_img {
+    font-size: 0;
 }
 
-div.authorcontainer{
+div.authorcontainer {
     float: left;
     margin-bottom: 10px;
     /* border: 1px solid blue; */
 }
 
-div.author{
+div.author {
     /* border: 1px solid black; */
     display: inline-block;
     position: relative;
 }
 
-div.author a.photo img{
-    width:40px;
-    display: inline-block; 
+div.author a.photo img {
+    width: 40px;
+    display: inline-block;
 }
 
 @media screen and (max-width: 992px) {
-    div.author a.photo img{
-        width:35px;
+    div.author a.photo img {
+        width: 35px;
     }
 }
-div.name{
+
+div.name {
     font-weight: 600;
     /* border: 1px solid black; */
     display: inline-block;
@@ -195,71 +194,67 @@ div.name{
     padding-top: 3px;
     padding-bottom: 10px;
     padding-left: 5px;
-
 }
 
 @media screen and (max-width: 992px) {
-    div.name, div.date{
+    div.name, div.date {
         font-size: 14px;
     }
 }
 
-div.date{
+div.date {
     font-size: 14px;
-    color:#636464;
+    color: #636464;
     /* border: 1px solid black; */
     display: inline-block;
     padding-left: 5px;
 }
 
-div.topics_social1{
+div.topics_social1 {
     /* border: 1px solid black; */
     float: right;
-    margin-top:15px;
+    margin-top: 15px;
 }
 
 @media screen and (max-width: 767px) {
-    div.topics_social1{
+    div.topics_social1 {
         display: none;
     }
 }
-div.topics_social1 span{
+
+div.topics_social1 span {
     font-size: 10px;
     font-weight: 600;
     padding-right: 3px;
     position: relative;
-    bottom:3px;
+    bottom: 3px;
 }
 
-div.topics_social1 img{
-    width:25px;
+div.topics_social1 img {
+    width: 25px;
     padding: 3px;
     position: relative;
-    top:5px;
-
+    top: 5px;
 }
-
 
 /* --------------------------content----------------------- */
 
-
-div.article h1{
+div.article h1 {
     /*letter-spacing: 0.5px; */
     margin: 0 auto;
     width: 768px;
     text-align: left;
     padding: 15px 0;
-
 }
 
-div.content{
-    width:768px;
+div.content {
+    width: 768px;
     vertical-align: middle;
     margin: 0 auto;
     text-align: justify;
-    text-justify:inter-ideograph;
-    line-height:35px ;
-    margin-bottom:50px;
+    text-justify: inter-ideograph;
+    line-height: 35px;
+    margin-bottom: 50px;
 }
 
 
@@ -267,7 +262,7 @@ div.content{
     div.content {
         width: 90%;
         font-size: 16px;
-        line-height:25px;
+        line-height: 25px;
     }
 }
 
@@ -277,32 +272,32 @@ div.content{
     }
 }
 
-div.violet img{
-    width:768px;
+div.violet img {
+    width: 768px;
     padding: 20px 0;
 }
 
 @media screen and (max-width: 992px) {
-    div.violet img{
+    div.violet img {
         width: 100%;
     }
 }
 
 /* -----------foot-------------------- */
 
-
-
-div.tag{
-    display:inline-block;
+div.tag {
+    display: inline-block;
 }
-div.tag img{
-    width:20px;
+
+div.tag img {
+    width: 20px;
 }
-div.bottum{
+
+div.bottum {
     position: relative;
 }
 
-div.bottum ul.hashtag{
+div.bottum ul.hashtag {
     padding-left: 0;
     /* position: relative; */
     display: flex;
@@ -310,15 +305,15 @@ div.bottum ul.hashtag{
     margin-bottom: 30px;
 }
 
-
 @media screen and (max-width: 1200px) {
     div.bottum ul.hashtag {
         flex-wrap: wrap;
     }
 }
-div.bottum ul.hashtag li{
+
+div.bottum ul.hashtag li {
     list-style: none;
-    display:inline-block;
+    display: inline-block;
     line-height: 35px;
     padding: 0 20px;
     font-size: 12px;
@@ -331,26 +326,24 @@ div.bottum ul.hashtag li{
     cursor: pointer;
 }
 
-div.topics_social{
+div.topics_social {
     /* border: 1px solid black; */
     display: inline-block;
     position: absolute;
     vertical-align: middle;
     right: 0;
-    top:-2px;
+    top: -2px;
 }
 
 @media screen and (max-width: 992px) {
     div.topics_social {
         display: block;
-        position:static;
+        position: static;
         text-align: center;
     }
 }
 
-
-
-div.topics_social span{
+div.topics_social span {
     font-size: 10px;
     font-weight: 600;
     padding-right: 3px;
@@ -359,33 +352,34 @@ div.topics_social span{
 @media screen and (max-width: 992px) {
     div.topics_social span {
         display: block;
-        position:static;
+        position: static;
         text-align: center;
         font-size: 14px;
     }
 }
-div.topics_social img{
-    width:25px;
+
+div.topics_social img {
+    width: 25px;
     padding: 3px;
     position: relative;
-    top:7px;
+    top: 7px;
 }
-
 
 @media screen and (max-width: 992px) {
     div.topics_social img {
-        width:30px;
+        width: 30px;
     }
 }
 
-
 /* --------button------ */
+
 hr.button {
     /* border: 1px solid #000; */
-    background-color:#000;
+    background-color: #000;
     height: 1px;
     width: 768px;
 }
+
 @media screen and (max-width: 1200px) {
     hr.button {
         width: 100%;
@@ -399,7 +393,6 @@ div.button {
     justify-content: space-between;
     margin-top: 50px;
     margin-bottom: 150px;
-   
 }
 
 @media screen and (max-width: 1200px) {
@@ -408,56 +401,52 @@ div.button {
     }
 }
 
-
-
-div.pre, div.next{
+div.pre, div.next {
     font-size: 14px;
     letter-spacing: 0.13em;
     /* font-weight: 500px; */
     border: 1px solid #000;
     padding: 15px 20px;
     cursor: pointer;
-    vertical-align:middle;
+    vertical-align: middle;
     width: 45%;
     text-align: left;
 }
 
-
-div.pre span,div.next span{
+div.pre span, div.next span {
     font-size: 18px;
     letter-spacing: 0;
     padding: 15px 0;
     font-weight: bold;
 }
 
-
-
-div.all > a{
+div.all>a {
     text-decoration: none;
 }
 
-div.all > a:visited{
+div.all>a:visited {
     text-decoration: none;
     color: #000;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-    div.pre, div.next{
+    div.pre, div.next {
         margin: 0 20px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    div.pre, div.next{
+    div.pre, div.next {
         margin: 0 20px;
         font-size: 12px;
     }
-    div.pre span,div.next span{
+    div.pre span, div.next span {
         font-size: 14px;
     }
 }
 
 /* Sweep To Right */
+
 div.pre, div.next {
     display: inline-block;
     vertical-align: middle;
@@ -466,8 +455,9 @@ div.pre, div.next {
     position: relative;
     transition-property: color;
     transition-duration: 0.3s;
-  }
-  div.pre:before , div.next:before {
+}
+
+div.pre:before, div.next:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -481,10 +471,39 @@ div.pre, div.next {
     transition-property: transform;
     transition-duration: 0.5s;
     transition-timing-function: ease-out;
-  }
-  div.pre:hover, div.pre:focus,div.pre:active ,div.next:hover, div.next:focus,div.next:active{
+}
+
+div.pre:hover, div.pre:focus, div.pre:active, div.next:hover, div.next:focus, div.next:active {
     color: white;
-  }
-  div.pre:hover:before, div.pre:focus:before, div.pre:active:before,   div.next:hover:before, div.next:focus:before, div.next:active:before {
+}
+
+div.pre:hover:before, div.pre:focus:before, div.pre:active:before, div.next:hover:before, div.next:focus:before, div.next:active:before {
     transform: scaleX(1);
-  }
+}
+
+.go-top {
+    font-family: "Proxima Nova";
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+    text-decoration: none;
+    color: #fafafa;
+    background-color: rgba(54, 91, 86, 0.95);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 1em;
+    display: none;
+    border-radius: 5px;
+}
+
+.go-top:hover {
+    background-color: #282828;
+}
+
+@media screen and (max-width: 767px) {
+    .go-top {
+       right: 8px;
+        bottom: 130px;
+    }
+}
