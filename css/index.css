@@ -27,7 +27,6 @@ main.one {
     margin-top: 50px;
     margin-bottom: 200px;
     margin-left: 420px;
-    width: 75%;
 }
 
 @media screen and (max-width: 1200px) {
