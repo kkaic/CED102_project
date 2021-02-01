@@ -27,6 +27,7 @@ main.one {
     margin-top: 50px;
     margin-bottom: 200px;
     margin-left: 420px;
+    /* width: 1500px; */
 }
 
 @media screen and (max-width: 1200px) {
@@ -110,10 +111,10 @@ div.home {
     display: none;
 }
 
-div.home div.home_img {
+/* div.home div.home_img {
     width: 850px;
     overflow: hidden;
-}
+} */
 
 main.one a.home_img img {
     max-width: 100%;
