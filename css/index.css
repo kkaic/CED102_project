@@ -9,6 +9,7 @@ div.half {
     background-size: cover;
 }
 
+
 @media screen and (max-width: 796px) {
     div.half {
         background: none;
