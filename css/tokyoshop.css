@@ -5,7 +5,7 @@
 * {
     font-family: "Proxima Nova";
 }
- 
+
 /* ----------TOPICS------------ */
 
 div.city_topics {
@@ -479,7 +479,7 @@ div.comments_card {
 }
 @media screen and (max-width: 767px) {
     div.comments_card {
-        height:230px;
+        height:200px;
     }
 }
 
@@ -618,6 +618,7 @@ div.pre, div.next{
     transition-duration: 0.3s;
     width:30%;
     padding: 10px 15px;
+    color:#282828;
 
 }
 
@@ -631,6 +632,7 @@ div.pre, div.next{
     transition-property: color;
     transition-duration: 0.3s;
     padding: 10px 15px;
+    color:#282828;
 
 
 }
