@@ -11,7 +11,7 @@ header.header {
     z-index: 100;
 }
 
-@media (max-width: 1500px) {
+@media screen and (min-width: 100px) {
     header.header {
         width: 100%;
     }

@@ -6,6 +6,7 @@ div.half {
     background-image: url("../image/home/homeback-01-01.png");
     background-repeat: no-repeat;
     width:100%;
+    background-size: cover;
 }
 
 @media screen and (max-width: 796px) {
@@ -28,6 +29,7 @@ main.one {
     margin-bottom: 200px;
     margin-left: 420px;
     /* width: 1500px; */
+    max-width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -136,7 +138,7 @@ div.home_img div.tokyo {
     background-color: #282828;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     div.home_img div.tokyo {
         height: 30px;
         right: 0px;
@@ -154,7 +156,7 @@ div.tokyo span {
     letter-spacing: 0.8px;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     div.tokyo span {
         font-size: 12px;
         top: 8px;
@@ -168,7 +170,7 @@ div.tokyo span.title {
     font-weight: 600;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     div.tokyo span.title {
         font-size: 12px;
         font-weight: 600;
