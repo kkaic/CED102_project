@@ -393,6 +393,7 @@ div.userrecommanded {
     color: #282828;
     width: 1200px;
     margin: 0 auto;
+    margin-top: 80px;
 }
 
 @media screen and (max-width:1200px) {
